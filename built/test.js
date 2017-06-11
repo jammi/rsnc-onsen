@@ -41,29 +41,29 @@ LOAD(() => {
   const MaterialCheckbox = require('onsen/materialcheckbox');
   const RadioButton = require('onsen/radiobutton');
   const MaterialRadioButton = require('onsen/materialradiobutton');
-  const List = require('onsen/list');
-  const NoborderList = require('onsen/noborderlist');
-  const CategoryListHeader = require('onsen/categorylistheader');
-  const TappableList = require('onsen/tappablelist');
-  const SwitchInListItem = require('onsen/switchinlistitem');
-  const ListItemWithChevron = require('onsen/listitemwithchevron');
-  const InsetList = require('onsen/insetlist');
-  const RadioButtonInListItem = require('onsen/radiobuttoninlistitem');
-  const CheckboxInListItem = require('onsen/checkboxinlistitem');
-  const NoBorderCheckboxInListItem = require('onsen/nobordercheckboxinlistitem');
-  const TextInputInListItem = require('onsen/textinputinlistitem');
-  const TextareaInListItem = require('onsen/textareainlistitem');
-  const RightLabelInListItem = require('onsen/rightlabelinlistitem');
-  const ListItemWithSubtitle = require('onsen/listitemwithsubtitle');
-  const ListItemWithThumbnail = require('onsen/listitemwiththumbnail');
-  const ListItemWithIcon = require('onsen/listitemwithicon');
-  const MaterialList = require('onsen/materiallist');
-  const MaterialListWithHeader = require('onsen/materiallistwithheader');
-  const MaterialListWithCheckboxes = require('onsen/materiallistwithcheckboxes');
-  const MaterialListWithThumbnails = require('onsen/materiallistwiththumbnails');
-  const MaterialListWithIcons = require('onsen/materiallistwithicons');
-  const ListItemWithoutDivider = require('onsen/listitemwithoutdivider');
-  const ListItemWithLongDivider = require('onsen/listitemwithlongdivider');
+  // const List = require('onsen/list');
+  // const NoborderList = require('onsen/noborderlist');
+  // const CategoryListHeader = require('onsen/categorylistheader');
+  // const TappableList = require('onsen/tappablelist');
+  // const SwitchInListItem = require('onsen/switchinlistitem');
+  // const ListItemWithChevron = require('onsen/listitemwithchevron');
+  // const InsetList = require('onsen/insetlist');
+  // const RadioButtonInListItem = require('onsen/radiobuttoninlistitem');
+  // const CheckboxInListItem = require('onsen/checkboxinlistitem');
+  // const NoBorderCheckboxInListItem = require('onsen/nobordercheckboxinlistitem');
+  // const TextInputInListItem = require('onsen/textinputinlistitem');
+  // const TextareaInListItem = require('onsen/textareainlistitem');
+  // const RightLabelInListItem = require('onsen/rightlabelinlistitem');
+  // const ListItemWithSubtitle = require('onsen/listitemwithsubtitle');
+  // const ListItemWithThumbnail = require('onsen/listitemwiththumbnail');
+  // const ListItemWithIcon = require('onsen/listitemwithicon');
+  // const MaterialList = require('onsen/materiallist');
+  // const MaterialListWithHeader = require('onsen/materiallistwithheader');
+  // const MaterialListWithCheckboxes = require('onsen/materiallistwithcheckboxes');
+  // const MaterialListWithThumbnails = require('onsen/materiallistwiththumbnails');
+  // const MaterialListWithIcons = require('onsen/materiallistwithicons');
+  // const ListItemWithoutDivider = require('onsen/listitemwithoutdivider');
+  // const ListItemWithLongDivider = require('onsen/listitemwithlongdivider');
   const SearchInput = require('onsen/searchinput');
   const TextInput = require('onsen/textinput');
   const UnderbarTextInput = require('onsen/underbartextinput');
@@ -116,32 +116,60 @@ LOAD(() => {
         value: true
       }).optimalSize[1] + padTop;
     });
-  [Checkbox].forEach(Item => {
+  [Checkbox, NoBorderCheckbox, MaterialCheckbox].forEach(Item => {
       let left = padLeft;
       left += Item.new({
         rect: [left, top],
         parent: app,
         value: false,
-        label: 'off'
+        label: 'OFF'
       }).optimalSize[0] + padLeft;
       left += Item.new({
         rect: [left, top],
         parent: app,
         value: true,
-        label: 'on',
+        label: 'ON',
       }).optimalSize[0] + padLeft;
       left += Item.new({
         rect: [left, top],
         parent: app,
         enabled: false,
-        label: 'off, disabled',
+        label: 'OFF, disabled',
       }).optimalSize[0] + padLeft;
       top += Item.new({
         rect: [left, top],
         parent: app,
         enabled: false,
         value: true,
-        label: 'on, disabled',
+        label: 'ON, disabled',
+      }).optimalSize[1] + padTop;
+    });
+  [RadioButton, MaterialRadioButton].forEach(Item => {
+      let left = padLeft;
+      left += Item.new({
+        rect: [left, top],
+        parent: app,
+        value: false,
+        label: 'Radio'
+      }).optimalSize[0] + padLeft;
+      left += Item.new({
+        rect: [left, top],
+        parent: app,
+        value: false,
+        label: 'Radio2',
+      }).optimalSize[0] + padLeft;
+      left += Item.new({
+        rect: [left, top],
+        parent: app,
+        enabled: false,
+        label: 'Radio3, disabled',
+      }).optimalSize[0] + padLeft;
+      top += Item.new({
+        rect: [left, top],
+        parent: app,
+        enabled: false,
+        value: true,
+        label: 'Radio4, disabled',
       }).optimalSize[1] + padTop;
     });
 });
@@ -151,8 +179,8 @@ LOAD(() => {
     TransparentNavigationBar, Button, OutlineButton, LightButton, QuietButton, CallToActionButton, LargeButton,
     LargeQuietButton, LargeCallToActionButton, MaterialButton, MaterialFlatButton, ButtonBar, Segment, IconTabBar,
     TabBar, IconOnlyTabBar, TopTabBar, BorderedTopTabBar, MaterialTabBar, MaterialTabBarIconOnly,
-    MaterialTabBarIconAndLabel, Notification, ToolBarButton, Checkbox, NoBorderCheckbox, MaterialCheckbox, RadioButton,
-    MaterialRadioButton, List, NoborderList, CategoryListHeader, TappableList, SwitchInListItem, ListItemWithChevron,
+    MaterialTabBarIconAndLabel, Notification, ToolBarButton,
+    List, NoborderList, CategoryListHeader, TappableList, SwitchInListItem, ListItemWithChevron,
     InsetList, RadioButtonInListItem, CheckboxInListItem, NoBorderCheckboxInListItem, TextInputInListItem,
     TextareaInListItem, RightLabelInListItem, ListItemWithSubtitle, ListItemWithThumbnail, ListItemWithIcon,
     MaterialList, MaterialListWithHeader, MaterialListWithCheckboxes, MaterialListWithThumbnails, MaterialListWithIcons,

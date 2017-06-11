@@ -47,29 +47,29 @@ packages:
     - onsen/materialcheckbox
     - onsen/radiobutton
     - onsen/materialradiobutton
-    - onsen/list
-    - onsen/noborderlist
-    - onsen/categorylistheader
-    - onsen/tappablelist
-    - onsen/switchinlistitem
-    - onsen/listitemwithchevron
-    - onsen/insetlist
-    - onsen/radiobuttoninlistitem
-    - onsen/checkboxinlistitem
-    - onsen/nobordercheckboxinlistitem
-    - onsen/textinputinlistitem
-    - onsen/textareainlistitem
-    - onsen/rightlabelinlistitem
-    - onsen/listitemwithsubtitle
-    - onsen/listitemwiththumbnail
-    - onsen/listitemwithicon
-    - onsen/materiallist
-    - onsen/materiallistwithheader
-    - onsen/materiallistwithcheckboxes
-    - onsen/materiallistwiththumbnails
-    - onsen/materiallistwithicons
-    - onsen/listitemwithoutdivider
-    - onsen/listitemwithlongdivider
+    # - onsen/list
+    # - onsen/noborderlist
+    # - onsen/categorylistheader
+    # - onsen/tappablelist
+    # - onsen/switchinlistitem
+    # - onsen/listitemwithchevron
+    # - onsen/insetlist
+    # - onsen/radiobuttoninlistitem
+    # - onsen/checkboxinlistitem
+    # - onsen/nobordercheckboxinlistitem
+    # - onsen/textinputinlistitem
+    # - onsen/textareainlistitem
+    # - onsen/rightlabelinlistitem
+    # - onsen/listitemwithsubtitle
+    # - onsen/listitemwiththumbnail
+    # - onsen/listitemwithicon
+    # - onsen/materiallist
+    # - onsen/materiallistwithheader
+    # - onsen/materiallistwithcheckboxes
+    # - onsen/materiallistwiththumbnails
+    # - onsen/materiallistwithicons
+    # - onsen/listitemwithoutdivider
+    # - onsen/listitemwithlongdivider
     - onsen/searchinput
     - onsen/textinput
     - onsen/underbartextinput
