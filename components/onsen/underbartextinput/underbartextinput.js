@@ -1,4 +1,4 @@
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenUnderBarTextInput extends OnsenBase {
   get componentName() {

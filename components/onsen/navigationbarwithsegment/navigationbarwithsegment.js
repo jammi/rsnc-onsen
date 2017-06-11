@@ -1,4 +1,4 @@
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNavigationBarWithSegment extends OnsenBase {
   get componentName() {

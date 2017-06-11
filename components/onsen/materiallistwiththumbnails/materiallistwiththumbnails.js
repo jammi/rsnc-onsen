@@ -1,4 +1,4 @@
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialListWithThumbnails extends OnsenBase {
   get componentName() {

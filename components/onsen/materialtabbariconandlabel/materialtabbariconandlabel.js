@@ -1,4 +1,4 @@
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialTabBarIconAndLabel extends OnsenBase {
   get componentName() {

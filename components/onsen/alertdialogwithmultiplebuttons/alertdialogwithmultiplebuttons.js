@@ -1,4 +1,4 @@
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenAlertDialogWithMultipleButtons extends OnsenBase {
   get componentName() {
