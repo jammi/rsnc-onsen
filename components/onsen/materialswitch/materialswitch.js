@@ -1,8 +1,14 @@
-const OnsenBase = require('onsen/base');
+const OnsenSwitch = require('onsen/switch');
 
-class OnsenMaterialSwitch extends OnsenBase {
+class OnsenMaterialSwitch extends OnsenSwitch {
   get componentName() {
     return 'materialswitch';
+  }
+  get componentClassNames() {
+    return ['switch', 'switch--material'];
+  }
+  get optimalSize() {
+    return [36, 24];
   }
 }
 

@@ -1,8 +1,15 @@
-const OnsenBase = require('onsen/base');
+const {OnsenToggle} = require('onsen/base');
 
-class OnsenSwitch extends OnsenBase {
+// This component is designed for a fixed size of 51x32px
+class OnsenSwitch extends OnsenToggle {
   get componentName() {
     return 'switch';
+  }
+  get cellTagName() {
+    return 'label';
+  }
+  get optimalSize() {
+    return [51, 32];
   }
 }
 
