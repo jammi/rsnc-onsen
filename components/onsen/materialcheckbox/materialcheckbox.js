@@ -5,7 +5,7 @@ class OnsenMaterialCheckbox extends OnsenCheckbox {
     return 'materialcheckbox';
   }
   get componentClassNames() {
-    return ['checkbox checkbox--material'];
+    return ['checkbox', 'checkbox--material'];
   }
 }
 

@@ -5,7 +5,7 @@ class OnsenMaterialRadioButton extends OnsenRadioButton {
     return 'materialradiobutton';
   }
   get componentClassNames() {
-    return ['radio-button radio-button--material'];
+    return ['radio-button', 'radio-button--material'];
   }
 }
 

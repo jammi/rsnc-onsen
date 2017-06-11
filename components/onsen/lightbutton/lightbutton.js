@@ -1,8 +1,11 @@
-const {OnsenBase} = require('onsen/base');
+const OnsenButton = require('onsen/button');
 
-class OnsenLightButton extends OnsenBase {
+class OnsenLightButton extends OnsenButton {
   get componentName() {
     return 'lightbutton';
+  }
+  get componentClassNames() {
+    return ['button', 'button--light'];
   }
 }
 

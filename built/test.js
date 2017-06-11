@@ -172,7 +172,7 @@ LOAD(() => {
       label: 'Radio4, disabled',
     }).optimalSize[1] + padTop;
   });
-  [Button].forEach(Item => {
+  [Button, OutlineButton, LightButton, QuietButton, CallToActionButton, LargeButton, LargeQuietButton, LargeCallToActionButton, MaterialButton, MaterialFlatButton].forEach(Item => {
     let left = padLeft;
     left += Item.new({
       rect: [left, top],
@@ -190,8 +190,8 @@ LOAD(() => {
 
 /*NavigationBar, NavigationBarItem, NavigationBarWithOutlineButton,
     BottomBar, NavigationBarWithSegment, MaterialNavigationBar, NoShadowNavigationBar, MaterialNavigationBarWithIcons,
-    TransparentNavigationBar, OutlineButton, LightButton, QuietButton, CallToActionButton, LargeButton,
-    LargeQuietButton, LargeCallToActionButton, MaterialButton, MaterialFlatButton, ButtonBar, Segment, IconTabBar,
+    TransparentNavigationBar,
+    ButtonBar, Segment, IconTabBar,
     TabBar, IconOnlyTabBar, TopTabBar, BorderedTopTabBar, MaterialTabBar, MaterialTabBarIconOnly,
     MaterialTabBarIconAndLabel, Notification, ToolBarButton,
     List, NoborderList, CategoryListHeader, TappableList, SwitchInListItem, ListItemWithChevron,
