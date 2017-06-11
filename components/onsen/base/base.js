@@ -2,12 +2,10 @@ const HControl = require('foundation/control');
 
 class OnsenBase extends HControl {
 
-  get defaultEvents() {
-    return {click: true};
-  }
-
-  click() {
-    this.setValue(!this.value);
+  // Extend this in components, these all should have
+  // some optimal size specified by their css
+  get optimalSize() {
+    return [200, 32];
   }
 
   setEnabledStyle(state) {
@@ -20,10 +18,22 @@ class OnsenBase extends HControl {
     }
   }
 
+}
+
+class OnsenToggle extends OnsenBase {
+
+  get defaultEvents() {
+    return {click: true};
+  }
+
+  click(x, y) {
+    this.setValue(!this.value);
+    return true;
+  }
+
   refreshValue() {
-    super.refreshValue();
     if (this.value) {
-      this.setAttrOfPart('control', 'checked', ' ', true);
+      this.setAttrOfPart('control', 'checked', ' ');
     }
     else {
       this.unsetAttrOfPart('control', 'checked');
@@ -31,4 +41,6 @@ class OnsenBase extends HControl {
   }
 }
 
-module.exports = OnsenBase;
+module.exports = {
+  OnsenBase, OnsenToggle
+};

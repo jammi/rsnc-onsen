@@ -1519,8 +1519,6 @@ class _ELEM extends UtilMethods {
 
     this._styleCache = {};
     this._styleTodo = {};
-    this._attrTodo = {};
-    this._attrCache = {};
     this._elemTodo = [];
     this._elemTodoH = {};
   }
@@ -1544,8 +1542,6 @@ class _ELEM extends UtilMethods {
   _initCache(_id) {
     this._styleTodo[_id] = [];
     this._styleCache[_id] = {};
-    this._attrTodo[_id] = [];
-    this._attrCache[_id] = {};
     this._elemTodoH[_id] = false;
   }
 
@@ -1604,9 +1600,7 @@ class _ELEM extends UtilMethods {
     if (i !== -1) {
       this._elemTodo.splice(i, 1);
     }
-    delete this._attrTodo[_id];
     delete this._styleCache[_id];
-    delete this._attrCache[_id];
     delete this._elemTodoH[_id];
     delete this._elements[_id];
     this._freeElemIds.push(_id);
@@ -1973,7 +1967,6 @@ class _ELEM extends UtilMethods {
       if (_this._elemTodoH[_id]) {
         _this._elemTodoH[_id] = false;
         _this._flushStyleCache(_id);
-        _this._flushAttrCache(_id);
       }
     });
   }
@@ -1988,35 +1981,18 @@ class _ELEM extends UtilMethods {
       for (let i = 0; i < _loopMaxL; i++) {
         this._flushLoopFlushed++;
         const _id = _currTodo.shift();
-        if (!_id && _id !== 0) {
+        if (this.isntNumber(_id)) {
           console.warn('ELEM._performFlush; no id:', _id);
         }
         else {
           this._elemTodoH[_id] = false;
           this._flushStyleCache(_id);
-          this._flushAttrCache(_id);
         }
       }
     }
     this._flushCounter++;
     this._flushTime += this.msNow();
     this._needFlush = this._elemTodo.length !== 0;
-  }
-
-  // Flushes the attribute cache
-  _flushAttrCache(_id) {
-    const _attrTodo = this._attrTodo[_id];
-    if (_attrTodo.length !== 0) {
-      const _attrCache = this._attrCache[_id];
-      const _elem = this._elements[_id];
-      const _loopMaxL = _attrTodo.length;
-      const _currTodo = _attrTodo.splice(0, _loopMaxL);
-      for (let i = 0; i < _loopMaxL; i++) {
-        const _key = _currTodo.shift();
-        const _val = _attrCache[_key];
-        _elem[_key] = _val;
-      }
-    }
   }
 
   // Return true if element is SVGElement
@@ -2033,70 +2009,45 @@ class _ELEM extends UtilMethods {
   // Gets an element attribute directly from the element
   _getAttrDirect(_id, _key) {
     const _elem = this._elements[_id];
-    const _attr = _elem[_key];
-    if (!_attr && _attr !== 0 && _attr !== '') {
-      return _elem.getAttribute(_key);
-    }
-    else {
-      return _attr;
-    }
+    return _elem.getAttribute(_key);
+  }
+
+  _setAttrDirect(_id, _key, _value) {
+    const _elem = this._elements[_id];
+    _elem.setAttribute(_key, _value);
   }
 
   // Gets a named element attribute from the cache or selectively direct
   getAttr(_id, _key, _noCache) {
-    if (!this._attrCache[_id]) {
-      return null;
+    if (this.isntNullOrUndefined(this._elements[_id])) {
+      return this._getAttrDirect(_id, _key);
     }
     else {
-      if (_key === 'class') {
-        _key = 'className';
-      }
-      let _val = this._attrCache[_id][_key];
-      if (_noCache || (!_val && _val !== '' && _val !== 0)) {
-        _val = this._getAttrDirect(_id, _key);
-        this._attrCache[_id][_key] = _val;
-      }
-      return _val;
+      return null;
     }
   }
 
   // Sets a named element attribute into the cache and buffer or selectively direct
   setAttr(_id, _key, _value, _noCache) {
-    if (this._elements[_id]) {
-      const _attrTodo = this._attrTodo[_id];
-      const _attrCache = this._attrCache[_id];
-      if (_noCache) {
-        this._elements[_id][_key] = _value;
-      }
-      const _reCache = (_value !== this.getAttr(_id, _key));
-      if (_reCache || _noCache) { // skip if nothing changes
-        _attrCache[_key] = _value;
-        if (!_noCache) {
-          if (!_attrTodo.includes(_key)) {
-            _attrTodo.push(_key);
-          }
-          if (!this._elemTodoH[_id]) {
-            this._elemTodo.push(_id);
-            this._elemTodoH[ _id ] = true;
-            this._checkNeedFlush();
-          }
-        }
-      }
+    if (this.isntNullOrUndefined(this._elements[_id])) {
+      this._setAttrDirect(_id, _key, _value);
     }
   }
 
+  _hasAttrDirect(_id, _key) {
+    return this._elements[_id].hasAttribute(_key);
+  }
+
+  _delAttrDirect(_id, _key) {
+    this._elements[_id].removeAttribute(_key);
+  }
+
   // Deletes a named element attribute
-  delAttr(_id, _key) {
-    if (this._elements[_id]) {
-      const _attrTodo = this._attrTodo[_id];
-      const _attrCache = this._attrCache[_id];
-      delete _attrCache[_key];
-      this._elements[_id].removeAttribute(_key);
-      const _todoIndex = _attrTodo.indexOf(_key);
-      if (_todoIndex !== -1) {
-        _attrTodo.splice(_todoIndex, 1);
+  delAttr(_id, _key, _noCache) {
+    if (this.isntNullOrUndefined(this._elements[_id])) {
+      if (this._hasAttrDirect(_id, _key)) {
+        this._delAttrDirect(_id, _key);
       }
-      this._checkNeedFlush();
     }
   }
 
@@ -2124,7 +2075,7 @@ class _ELEM extends UtilMethods {
 
   // Checks if the element has a named CSS className
   hasClassName(_id, _className) {
-    if (this._elements[_id]) {
+    if (this.isntNullOrUndefined(this._elements[_id])) {
       const _classNames = this._getClassNames(_id).split(' ');
       return _classNames.includes(_className);
     }
@@ -2133,7 +2084,7 @@ class _ELEM extends UtilMethods {
 
   // Adds a named CSS className to the element
   addClassName(_id, _className) {
-    if (this._elements[_id]) {
+    if (this.isntNullOrUndefined(this._elements[_id])) {
       if (!this.hasClassName(_id, _className)) {
         const _elem = this._elements[_id];
         if (this._getClassNames(_id).trim() === '') {
@@ -2144,20 +2095,18 @@ class _ELEM extends UtilMethods {
           _classNames.push(_className);
           this._setClassNames(_id, _classNames.join(' '));
         }
-        this._attrCache[_id].className = this._getClassNames(_id);
       }
     }
   }
 
   // Removes a named CSS className of the element
   delClassName(_id, _className) {
-    if (this._elements[_id]) {
+    if (this.isntNullOrUndefined(this._elements[_id])) {
       if (this.hasClassName(_id, _className)) {
         const _elem = this._elements[_id];
         const _classNames = this._getClassNames(_id).split(' ');
         _classNames.splice(_classNames.indexOf(_className), 1);
         this._setClassNames(_id, _classNames.join(' '));
-        this._attrCache[_id].className = this._getClassNames(_id);
       }
     }
   }
@@ -2198,7 +2147,7 @@ class _ELEM extends UtilMethods {
 
   // Sets and buffers the named style attribute value or selectively direct
   setStyle(_id, _key, _value, _noCache) {
-    if (this._elements[_id]) {
+    if (this.isntNullOrUndefined(this._elements[_id])) {
       if (!_id && _id !== 0) {
         console.error(
           'ERROR; no id in ELEM.setStyle',
@@ -3721,11 +3670,11 @@ const HSystem = new (class extends UtilMethods {
     }
   }
 
-  /** Return list of views which are in root level of document sorted by z-inde **/
+  /** Return list of views which are in root level of document sorted by z-index **/
   getZOrder() {
     return this.views
       .filter(_view => {
-        return _view && _view.parent.elemId !== 0;
+        return _view && _view.parent.elemId === 0;
       })
       .map((_view, index) => {
         let zIndex = ELEM.getStyle(_view.elemId, 'z-index', true);
@@ -4068,7 +4017,10 @@ class HValueResponder extends UtilMethods {
   }
 
   get value() {
-    return this.__value || null;
+    if (this.isUndefined(this.__value)) {
+      this.__value = null;
+    }
+    return this.__value;
   }
 }
 
@@ -6956,6 +6908,12 @@ class HView extends HValueResponder {
     ];
   }
 
+  // Extend with something returning an array if your component has
+  // an optimal size to work with points rather than rects.
+  get optimalSize() {
+    return null;
+  }
+
   /* = Description
   * Constructs the logic part of a HView.
   * The view still needs to be drawn on screen. To do that, call draw after
@@ -7079,7 +7037,21 @@ class HView extends HValueResponder {
   setOptions(_options) {
     _options = super.setOptions(_options);
     const _parent = _options.parent;
-    const _rect = _options.rect;
+    const _rect = (() => {
+      if (_options.rect) {
+        if (this.isArray(_options.rect) && this.optimalSize) {
+          const [w, h] = this.optimalSize;
+          if (this.isntNumber(_options.rect[2])) {
+            _options.rect[2] = w;
+          }
+          if (this.isntNumber(_options.rect[3])) {
+            _options.rect[3] = h;
+          }
+        }
+        return _options.rect;
+      }
+      return null;
+    })();
     // destructable timeouts:
     this.timeouts = [];
     // adds the parentClass as a "super" object
@@ -7303,6 +7275,11 @@ class HView extends HValueResponder {
     return HThemeManager._buildThemePath(_fileName, _themeName);
   }
 
+  // The element tag for the cell element of the component.
+  get cellTagName() {
+    return 'div';
+  }
+
   /* = Description
   * The _makeElem method does the ELEM.make call to create
   * the <div> element of the component. It assigns the elemId.
@@ -7311,7 +7288,7 @@ class HView extends HValueResponder {
   * ++
   **/
   _makeElem(_parentElemId) {
-    this.elemId = ELEM.make(_parentElemId, 'div');
+    this.elemId = ELEM.make(_parentElemId, this.cellTagName);
     ELEM.setAttr(this.elemId, 'view_id', this.viewId, true);
     ELEM.setAttr(this.elemId, 'elem_id', this.elemId, true);
   }
@@ -7387,7 +7364,6 @@ class HView extends HValueResponder {
   * main DOM element of the view.
   **/
   createElement() {
-    // debugger;
     if (this.isntNumber(this.elemId)) {
       this._makeElem(this.getParentElemId());
       if (this.cssOverflowY === false && this.cssOverflowX === false) {
@@ -7412,8 +7388,16 @@ class HView extends HValueResponder {
         ELEM.addClassName(this.elemId, HThemeManager.currentTheme);
       }
       // componentName => CSS class name
-      if (this.isntNullOrUndefined(this.componentName)) {
-        ELEM.addClassName(this.elemId, this.componentName);
+      if (this.isString(this.componentName)) {
+        const classNamesArray =
+          this.isString(this.componentClassNames) ?
+            this.componentClassNames.split(' ') :
+              this.isArray(this.componentClassNames) ?
+                this.componentClassNames :
+                [this.componentName];
+        classNamesArray.forEach(className => {
+          ELEM.addClassName(this.elemId, className);
+        });
       }
       // BROWSER_TYPE.* = true => CSS class names
       Object.entries(BROWSER_TYPE).forEach(([_browserName, _active]) => {
