@@ -93,90 +93,104 @@ LOAD(() => {
   const padTop = 12;
 
   [Switch, MaterialSwitch].forEach(Item => {
-      let left = padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        value: false
-      }).optimalSize[0] + padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        value: true
-      }).optimalSize[0] + padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        enabled: false
-      }).optimalSize[0] + padLeft;
-      top += Item.new({
-        rect: [left, top],
-        parent: app,
-        enabled: false,
-        value: true
-      }).optimalSize[1] + padTop;
-    });
+    let left = padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      value: false
+    }).optimalSize[0] + padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      value: true
+    }).optimalSize[0] + padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      enabled: false
+    }).optimalSize[0] + padLeft;
+    top += Item.new({
+      rect: [left, top],
+      parent: app,
+      enabled: false,
+      value: true
+    }).optimalSize[1] + padTop;
+  });
   [Checkbox, NoBorderCheckbox, MaterialCheckbox].forEach(Item => {
-      let left = padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        value: false,
-        label: 'OFF'
-      }).optimalSize[0] + padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        value: true,
-        label: 'ON',
-      }).optimalSize[0] + padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        enabled: false,
-        label: 'OFF, disabled',
-      }).optimalSize[0] + padLeft;
-      top += Item.new({
-        rect: [left, top],
-        parent: app,
-        enabled: false,
-        value: true,
-        label: 'ON, disabled',
-      }).optimalSize[1] + padTop;
-    });
+    let left = padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      value: false,
+      label: 'OFF'
+    }).optimalSize[0] + padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      value: true,
+      label: 'ON',
+    }).optimalSize[0] + padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      enabled: false,
+      label: 'OFF, disabled',
+    }).optimalSize[0] + padLeft;
+    top += Item.new({
+      rect: [left, top],
+      parent: app,
+      enabled: false,
+      value: true,
+      label: 'ON, disabled',
+    }).optimalSize[1] + padTop;
+  });
   [RadioButton, MaterialRadioButton].forEach(Item => {
-      let left = padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        value: false,
-        label: 'Radio'
-      }).optimalSize[0] + padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        value: false,
-        label: 'Radio2',
-      }).optimalSize[0] + padLeft;
-      left += Item.new({
-        rect: [left, top],
-        parent: app,
-        enabled: false,
-        label: 'Radio3, disabled',
-      }).optimalSize[0] + padLeft;
-      top += Item.new({
-        rect: [left, top],
-        parent: app,
-        enabled: false,
-        value: true,
-        label: 'Radio4, disabled',
-      }).optimalSize[1] + padTop;
-    });
+    let left = padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      value: false,
+      label: 'Radio'
+    }).optimalSize[0] + padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      value: false,
+      label: 'Radio2',
+    }).optimalSize[0] + padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      enabled: false,
+      label: 'Radio3, disabled',
+    }).optimalSize[0] + padLeft;
+    top += Item.new({
+      rect: [left, top],
+      parent: app,
+      enabled: false,
+      value: true,
+      label: 'Radio4, disabled',
+    }).optimalSize[1] + padTop;
+  });
+  [Button].forEach(Item => {
+    let left = padLeft;
+    left += Item.new({
+      rect: [left, top],
+      parent: app,
+      label: 'Button Enabled'
+    }).optimalSize[0] + padLeft;
+    top += Item.new({
+      rect: [left, top],
+      parent: app,
+      enabled: false,
+      label: 'Button Disabled',
+    }).optimalSize[1] + padTop;
+  });
 });
 
-/*Range, MaterialRange, NavigationBar, NavigationBarItem, NavigationBarWithOutlineButton,
+/*NavigationBar, NavigationBarItem, NavigationBarWithOutlineButton,
     BottomBar, NavigationBarWithSegment, MaterialNavigationBar, NoShadowNavigationBar, MaterialNavigationBarWithIcons,
-    TransparentNavigationBar, Button, OutlineButton, LightButton, QuietButton, CallToActionButton, LargeButton,
+    TransparentNavigationBar, OutlineButton, LightButton, QuietButton, CallToActionButton, LargeButton,
     LargeQuietButton, LargeCallToActionButton, MaterialButton, MaterialFlatButton, ButtonBar, Segment, IconTabBar,
     TabBar, IconOnlyTabBar, TopTabBar, BorderedTopTabBar, MaterialTabBar, MaterialTabBarIconOnly,
     MaterialTabBarIconAndLabel, Notification, ToolBarButton,
