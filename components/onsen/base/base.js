@@ -1,6 +1,6 @@
-const HControl = require('foundation/control');
+const Control = require('foundation/control');
 
-class OnsenBase extends HControl {
+class OnsenBase extends Control {
 
   // Extend this in components, these all should have
   // some optimal size specified by their css
@@ -26,13 +26,12 @@ class OnsenToggle extends OnsenBase {
     return {click: true};
   }
 
-  click(x, y) {
+  click() {
     this.setValue(!this.value);
-    return true;
+    return false;
   }
 
   refreshValue() {
-    console.log(this.value);
     if (this.value) {
       this.setAttrOfPart('control', 'checked', ' ');
     }
