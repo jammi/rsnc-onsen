@@ -24,8 +24,8 @@ const themeCss = {
   'alertdialogwithouttitle': ()=>{return `.alert-dialog {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  -moz-transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  -o-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  width: 270px;\n  margin: auto auto;\n  background-color: #f4f4f4;\n  -webkit-border-radius: 8px;\n  border-radius: 8px;\n  overflow: visible;\n  max-width: 95%;\n  color: #1f1f21;\n}\n.alert-dialog-container {\n  height: inherit;\n  padding-top: 16px;\n  overflow: hidden;\n}\n.alert-dialog-title {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  font-size: 17px;\n  font-weight: 500;\n  padding: 0px 8px 0px 8px;\n  text-align: center;\n  color: #1f1f21;\n}\n.alert-dialog-content {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 4px 12px 8px 12px;\n  font-size: 14px;\n  min-height: 36px;\n  text-align: center;\n  color: #1f1f21;\n}\n.alert-dialog-footer {\n  width: 100%;\n}\n.alert-dialog-button {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  text-decoration: none;\n  letter-spacing: 0;\n  vertical-align: middle;\n  border: none;\n  border-top: 1px solid #ddd;\n  font-size: 16px;\n  padding: 0 8px;\n  margin: 0;\n  display: block;\n  width: 100%;\n  background-color: transparent;\n  text-align: center;\n  height: 44px;\n  line-height: 44px;\n  outline: none;\n  color: rgba(24,103,194,0.81);\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .alert-dialog-button {\n    border-top: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: top;\n    background-image: -webkit-linear-gradient(270deg, #ddd, #ddd 50%, transparent 50%);\n    background-image: -moz-linear-gradient(270deg, #ddd, #ddd 50%, transparent 50%);\n    background-image: -o-linear-gradient(270deg, #ddd, #ddd 50%, transparent 50%);\n    background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%);\n  }\n}\n.alert-dialog-button:active {\n  background-color: rgba(0,0,0,0.05);\n}\n.alert-dialog-button--primal {\n  font-weight: 500;\n}\n.alert-dialog-footer--one {\n  white-space: nowrap;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -moz-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n}\n.alert-dialog-button--one {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n  -moz-box-flex: 1;\n  -moz-flex: 1;\n  -ms-flex: 1;\n  flex: 1;\n  display: block;\n  width: 100%;\n  border-left: 1px solid #ddd;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .alert-dialog-button--one {\n    border-top: none;\n    border-left: none;\n    -webkit-background-size: 100% 1px, 1px 100%;\n    background-size: 100% 1px, 1px 100%;\n    background-repeat: no-repeat;\n    background-position: top, left;\n    background-image: -webkit-linear-gradient(90deg, transparent, transparent 50%, #ddd 50%), -webkit-linear-gradient(0deg, transparent, transparent 50%, #ddd 50%);\n    background-image: -moz-linear-gradient(90deg, transparent, transparent 50%, #ddd 50%), -moz-linear-gradient(0deg, transparent, transparent 50%, #ddd 50%);\n    background-image: -o-linear-gradient(90deg, transparent, transparent 50%, #ddd 50%), -o-linear-gradient(0deg, transparent, transparent 50%, #ddd 50%);\n    background-image: linear-gradient(0deg, transparent, transparent 50%, #ddd 50%), linear-gradient(90deg, transparent, transparent 50%, #ddd 50%);\n  }\n}\n.alert-dialog-button--one:first-child {\n  border-left: none;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .alert-dialog-button--one:first-child {\n    border-top: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: top, left;\n    background-image: -webkit-linear-gradient(90deg, transparent, transparent 50%, #ddd 50%);\n    background-image: -moz-linear-gradient(90deg, transparent, transparent 50%, #ddd 50%);\n    background-image: -o-linear-gradient(90deg, transparent, transparent 50%, #ddd 50%);\n    background-image: linear-gradient(0deg, transparent, transparent 50%, #ddd 50%);\n  }\n}\n.alert-dialog-mask {\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n  background-color: rgba(0,0,0,0.2);\n}\n\n`;},
   'borderedtoptabbar': ()=>{return `.tab-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table;\n  table-layout: fixed;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  right: 0px;\n  white-space: nowrap;\n  margin: 0;\n  padding: 0;\n  height: 49px;\n  background-color: #fff;\n  border-top: 1px solid #ccc;\n  width: 100%;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar {\n    border-top: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: top;\n    background-image: -webkit-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(180deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar__item {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  display: table-cell;\n  width: auto;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.tab-bar__item > input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.tab-bar__button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  text-decoration: none;\n  padding: 0;\n  height: 49px;\n  letter-spacing: 0;\n  color: #999;\n  text-shadow: 0 1px none;\n  vertical-align: top;\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n  width: 100%;\n  font-weight: 400;\n  line-height: 49px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar__button {\n    border-top: none;\n  }\n}\n.tab-bar__icon {\n  font-size: 24px;\n  padding: 0;\n  margin: 0;\n  line-height: 26px;\n  display: block;\n  height: 28px;\n}\n.tab-bar__label {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n}\n.tab-bar__badge.notification {\n  position: absolute;\n  top: 5px;\n  z-index: 10;\n  font-size: 12px;\n  height: 16px;\n  line-height: 16px;\n  -webkit-border-radius: 8px;\n  border-radius: 8px;\n}\n.tab-bar__icon + .tab-bar__label {\n  font-size: 10px;\n  line-height: 1;\n  margin: 0;\n  font-weight: 400;\n}\n.tab-bar__label:first-child {\n  font-size: 16px;\n  line-height: 49px;\n  margin: 0;\n  padding: 0;\n}\n.tab-bar__button {\n  color: #999;\n}\n:checked + .tab-bar__button {\n  color: rgba(24,103,194,0.81);\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n}\n.tab-bar__button:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.tab-bar__button:focus {\n  z-index: 1;\n  border-top: none;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  outline: 0;\n}\n.tab-bar__content {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 49px;\n  z-index: 0;\n}\n.tab-bar--top {\n  position: relative;\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  bottom: auto;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar--top {\n    border-bottom: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: bottom;\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar--top__content {\n  top: 49px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 0;\n}\n\n`;},
   'bottombar': ()=>{return `.navigation-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  white-space: nowrap;\n  overflow: hidden;\n  word-spacing: 0;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  z-index: 2;\n  display: block;\n  height: 44px;\n  padding-left: 0;\n  padding-right: 0;\n  background: #fff;\n  color: #1f1f21;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  font-weight: 400;\n  width: 100%;\n  white-space: nowrap;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #bbb, #bbb 100%);\n  background-image: -moz-linear-gradient(90deg, #bbb, #bbb 100%);\n  background-image: -o-linear-gradient(90deg, #bbb, #bbb 100%);\n  background-image: linear-gradient(0deg, #bbb, #bbb 100%);\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .navigation-bar {\n    background-image: -webkit-linear-gradient(90deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #bbb, #bbb 50%, transparent 50%);\n  }\n}\n.navigation-bar__bg {\n  background: #fff;\n}\n.navigation-bar__item,\n.navigation-bar__left,\n.navigation-bar__right,\n.navigation-bar__center {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  height: 44px;\n  vertical-align: top;\n  overflow: visible;\n  display: block;\n  vertical-align: middle;\n  float: left;\n}\n.navigation-bar__left {\n  max-width: 50%;\n  width: 27%;\n  text-align: left;\n  line-height: 44px;\n}\n.navigation-bar__right {\n  max-width: 50%;\n  width: 27%;\n  text-align: right;\n  line-height: 44px;\n}\n.navigation-bar__center {\n  width: 46%;\n  text-align: center;\n  line-height: 44px;\n  font-size: 17px;\n  font-weight: 500;\n  color: #1f1f21;\n}\n.navigation-bar__title {\n  line-height: 44px;\n  font-size: 17px;\n  font-weight: 500;\n  color: #1f1f21;\n  margin: 0;\n  padding: 0;\n  overflow: visible;\n}\n.navigation-bar__center:first-child:last-child {\n  width: 100%;\n}\n.bottom-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  white-space: nowrap;\n  overflow: hidden;\n  word-spacing: 0;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  z-index: 2;\n  display: block;\n  height: 44px;\n  padding-left: 0;\n  padding-right: 0;\n  background: #fff;\n  color: #1f1f21;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  font-weight: 400;\n  border-bottom: none;\n  border-top: 1px solid #bbb;\n  position: absolute;\n  bottom: 0px;\n  right: 0px;\n  left: 0px;\n  border-top: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: top;\n  background-image: -webkit-linear-gradient(270deg, #bbb, #bbb 100%);\n  background-image: -moz-linear-gradient(270deg, #bbb, #bbb 100%);\n  background-image: -o-linear-gradient(270deg, #bbb, #bbb 100%);\n  background-image: linear-gradient(180deg, #bbb, #bbb 100%);\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .bottom-bar {\n    background-image: -webkit-linear-gradient(270deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: -moz-linear-gradient(270deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: -o-linear-gradient(270deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: linear-gradient(180deg, #bbb, #bbb 50%, transparent 50%);\n  }\n}\n.bottom-bar__line-height {\n  line-height: 44px;\n  padding-bottom: 0;\n  padding-top: 0;\n}\n.bottom-bar--transparent {\n  background-color: transparent;\n  background-image: none;\n  border: none;\n}\n`;},
-  'button': ()=>{return `.button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  height: auto;\n  text-decoration: none;\n  padding: 4px 10px;\n  font-size: 17px;\n  line-height: 32px;\n  letter-spacing: 0;\n  color: #fff;\n  vertical-align: middle;\n  background-color: rgba(24,103,194,0.81);\n  border: 0px solid currentColor;\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.button:hover {\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.button:active {\n  background-color: rgba(24,103,194,0.81);\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n  opacity: 0.2;\n}\n.button:focus {\n  outline: 0;\n}\n.button:disabled,\n.button[disabled] {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n`;},
   'buttonbar': ()=>{return `.button-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table;\n  table-layout: fixed;\n  white-space: nowrap;\n  margin: 0;\n  padding: 0;\n  position: relative;\n  margin: 0;\n  border: none;\n}\n.button-bar__item {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table-cell;\n  width: auto;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n  position: relative;\n  position: relative;\n  overflow: hidden;\n  padding: 0;\n  position: relative;\n  overflow: hidden;\n}\n.button-bar__item > input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.button-bar__item:first-child > .button-bar__button {\n  border-left: 1px solid rgba(18,114,224,0.77);\n  border-right: 1px solid rgba(18,114,224,0.77);\n  -webkit-border-top-left-radius: 4px;\n  border-top-left-radius: 4px;\n  -webkit-border-bottom-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.button-bar__item:last-child > .button-bar__button {\n  border-right: 1px solid rgba(18,114,224,0.77);\n  -webkit-border-top-right-radius: 4px;\n  border-top-right-radius: 4px;\n  -webkit-border-bottom-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.button-bar__button {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-border-radius: inherit;\n  border-radius: inherit;\n  background-color: transparent;\n  color: rgba(18,114,224,0.77);\n  border: 0px solid rgba(18,114,224,0.77);\n  border-top: 1px solid rgba(18,114,224,0.77);\n  border-bottom: 1px solid rgba(18,114,224,0.77);\n  border-right: 1px solid rgba(18,114,224,0.77);\n  font-weight: 400;\n  padding: 0 8px;\n  height: 27px;\n  line-height: 27px;\n  font-size: 13px;\n  width: 100%;\n  -webkit-transition: background-color 0.2s linear, color 0.2s linear;\n  -moz-transition: background-color 0.2s linear, color 0.2s linear;\n  -o-transition: background-color 0.2s linear, color 0.2s linear;\n  transition: background-color 0.2s linear, color 0.2s linear;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n.button-bar__button:active,\n:active + .button-bar__button {\n  background-color: rgba(18,114,224,0.77);\n  border: 0px solid rgba(18,114,224,0.77);\n  border-top: 1px solid rgba(18,114,224,0.77);\n  border-bottom: 1px solid rgba(18,114,224,0.77);\n  border-right: 1px solid rgba(18,114,224,0.77);\n  height: 27px;\n  line-height: 27px;\n  font-size: 13px;\n  width: 100%;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.button-bar__item.active > .button-bar__button,\n:checked + .button-bar__button {\n  background-color: rgba(18,114,224,0.77);\n  color: #fff;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.button-bar__button:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.button-bar__button:hover {\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.button-bar__button:focus {\n  outline: 0;\n}\n`;},
+  'button': ()=>{return `.button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  height: auto;\n  text-decoration: none;\n  padding: 4px 10px;\n  font-size: 17px;\n  line-height: 32px;\n  letter-spacing: 0;\n  color: #fff;\n  vertical-align: middle;\n  background-color: rgba(24,103,194,0.81);\n  border: 0px solid currentColor;\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.button:hover {\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.button:active {\n  background-color: rgba(24,103,194,0.81);\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n  opacity: 0.2;\n}\n.button:focus {\n  outline: 0;\n}\n.button:disabled,\n.button[disabled] {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n`;},
   'calltoactionbutton': ()=>{return `.button--cta {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  height: auto;\n  text-decoration: none;\n  padding: 4px 10px;\n  font-size: 17px;\n  line-height: 32px;\n  letter-spacing: 0;\n  color: #fff;\n  vertical-align: middle;\n  background-color: rgba(24,103,194,0.81);\n  border: 0px solid currentColor;\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n  border: none;\n  background-color: #25a6d9;\n  color: #fff;\n}\n.button--cta:hover {\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.button--cta:focus {\n  outline: 0;\n}\n.button--cta:active {\n  color: #fff;\n  background-color: #25a6d9;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n  opacity: 0.2;\n}\n.button--cta:disabled,\n.button--cta[disabled] {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n`;},
   'categorylistheader': ()=>{return `.list__item__left {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 12px 14px 12px 0;\n  -webkit-box-ordinal-group: 1;\n  -webkit-order: 0;\n  -moz-box-ordinal-group: 1;\n  -ms-flex-order: 0;\n  order: 0;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n.list__item__left:empty {\n  width: 0;\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n}\n.list__item__center {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n  -moz-box-flex: 1;\n  -ms-flex-positive: 1;\n  flex-grow: 1;\n  -webkit-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-ordinal-group: 2;\n  -webkit-order: 1;\n  -moz-box-ordinal-group: 2;\n  -ms-flex-order: 1;\n  order: 1;\n  margin-right: auto;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  margin-left: 0;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  padding: 12px 6px 12px 0;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__center {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__item__right {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-left: auto;\n  padding: 12px 12px 12px 0;\n  -webkit-box-ordinal-group: 3;\n  -webkit-order: 2;\n  -moz-box-ordinal-group: 3;\n  -ms-flex-order: 2;\n  order: 2;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__right {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__header {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  text-align: left;\n  display: block;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  padding: 20px 0 0 15px;\n  font-size: 12px;\n  font-weight: 500;\n  color: #1f1f21;\n  text-shadow: none;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n  -webkit-box-shadow: 0px 1px 0px 0px #fff;\n  box-shadow: 0px 1px 0px 0px #fff;\n  min-height: 24px;\n  line-height: 24px;\n  margin-top: -1px;\n  text-transform: uppercase;\n  position: relative;\n}\n.list__header:not(:first-of-type) {\n  border-top: 1px solid #ccc;\n}\n.list {\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n  text-align: left;\n  overflow: auto;\n  display: block;\n  -webkit-overflow-scrolling: touch;\n  border-bottom: 1px solid #ccc;\n  overflow: hidden;\n}\n.list__item {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  position: relative;\n  list-style: none;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-pack: start;\n  -webkit-justify-content: flex-start;\n  -moz-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  padding: 0 0 0 14px;\n  margin: 1px 0 -1px 0;\n  color: #1f1f21;\n  background-color: #fff;\n}\n.list__item:first-child {\n  -webkit-box-shadow: inset 0px 1px 0px 0px #ccc;\n  box-shadow: inset 0px 1px 0px 0px #ccc;\n  margin-top: 0;\n}\n.list__item_active:active {\n  background-color: #d9d9d9;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n\n`;},
   'checkbox': ()=>{return `.checkbox {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  line-height: 24px;\n}\n.checkbox__checkmark {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  height: 24px;\n  pointer-events: none;\n}\n.checkbox__input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.checkbox__input:checked {\n  background: rgba(24,103,194,0.81);\n}\n.checkbox__input:checked + .checkbox__checkmark:before {\n  background: rgba(24,103,194,0.81);\n  border: 1px solid rgba(24,103,194,0.81);\n}\n.checkbox__input:checked + .checkbox__checkmark:after {\n  opacity: 1;\n}\n.checkbox__checkmark:before {\n  content: '';\n  position: absolute;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  width: 24px;\n  height: 24px;\n  background: transparent;\n  border: 1px solid rgba(24,103,194,0.81);\n  -webkit-border-radius: 16px;\n  border-radius: 16px;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  left: 0;\n}\n.checkbox__checkmark {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  width: 24px;\n  height: 24px;\n}\n.checkbox__checkmark:after {\n  content: '';\n  position: absolute;\n  top: 6px;\n  left: 5px;\n  width: 12px;\n  height: 6px;\n  background: transparent;\n  border: 3px solid #fff;\n  border-width: 2px;\n  border-top: none;\n  border-right: none;\n  -webkit-border-radius: 0px;\n  border-radius: 0px;\n  -webkit-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  -o-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  opacity: 0;\n}\n.checkbox__input:focus + .checkbox__checkmark:before {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n.checkbox__input:disabled + .checkbox__checkmark {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.checkbox__input:disabled:active + .checkbox__checkmark:before {\n  background: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n`;},
@@ -63,8 +63,8 @@ const themeCss = {
   'materialradiobutton': ()=>{return `.radio-button__input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.radio-button__input:active,\n.radio-button__input:focus {\n  outline: 0;\n  -webkit-tap-highlight-color: rgba(0,0,0,0);\n}\n.radio-button__input:checked + .radio-button__checkmark:after {\n  opacity: 1;\n}\n.radio-button__input:checked + .radio-button__checkmark:before {\n  background: transparent;\n  border: none;\n}\n.radio-button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  position: relative;\n  overflow: hidden;\n  line-height: 24px;\n  text-align: left;\n}\n.radio-button__checkmark:before {\n  content: '';\n  position: absolute;\n  -webkit-border-radius: 100%;\n  border-radius: 100%;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  width: 24px;\n  height: 24px;\n  background: transparent;\n  border: none;\n  -webkit-border-radius: 16px;\n  border-radius: 16px;\n  left: 0;\n}\n.radio-button__checkmark {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  position: relative;\n  width: 24px;\n  height: 24px;\n  background: transparent;\n  pointer-events: none;\n}\n.radio-button__input:checked + .radio-button__checkmark {\n  background: rgba(0,0,0,0);\n}\n.radio-button__checkmark:after {\n  content: '';\n  position: absolute;\n  -webkit-border-radius: 100%;\n  border-radius: 100%;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n  -moz-transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  -o-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  top: 6px;\n  left: 5px;\n  opacity: 0;\n  width: 12px;\n  height: 6px;\n  background: transparent;\n  border: 3px solid rgba(24,103,194,0.81);\n  border-width: 2px;\n  border-top: none;\n  border-right: none;\n  -webkit-border-radius: 0px;\n  border-radius: 0px;\n  -webkit-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  -o-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n}\n.radio-button__input:disabled + .radio-button__checkmark {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.radio-button--material {\n  line-height: 22px;\n  font-family: 'Roboto', 'Noto', sans-serif;\n  -webkit-font-smoothing: antialiased;\n}\n.radio-button--material__checkmark {\n  width: 20px;\n  height: 20px;\n  overflow: visible;\n}\n.radio-button--material__checkmark:before {\n  background: transparent;\n  border: 2px solid #717171;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-border-radius: 50%;\n  border-radius: 50%;\n  width: 20px;\n  height: 20px;\n  -webkit-transition: border 0.2s ease;\n  -moz-transition: border 0.2s ease;\n  -o-transition: border 0.2s ease;\n  transition: border 0.2s ease;\n}\n.radio-button--material__checkmark:after {\n  -webkit-transition: background 0.2s ease, -webkit-transform 0.2s ease;\n  -moz-transition: background 0.2s ease, -moz-transform 0.2s ease;\n  -o-transition: background 0.2s ease, -o-transform 0.2s ease;\n  transition: background 0.2s ease, transform 0.2s ease;\n  top: 5px;\n  left: 5px;\n  width: 10px;\n  height: 10px;\n  border: none;\n  -webkit-border-radius: 50%;\n  border-radius: 50%;\n  -webkit-transform: scale(0);\n  -moz-transform: scale(0);\n  -ms-transform: scale(0);\n  -o-transform: scale(0);\n  transform: scale(0);\n}\n.radio-button--material__input:checked + .radio-button__checkmark:before {\n  background: transparent;\n  border: 2px solid #009688;\n}\n.radio-button--material__input + .radio-button__checkmark:after {\n  background: #717171;\n  opacity: 1;\n  -webkit-transform: scale(0);\n  -moz-transform: scale(0);\n  -ms-transform: scale(0);\n  -o-transform: scale(0);\n  transform: scale(0);\n}\n.radio-button--material__input:checked + .radio-button__checkmark:after {\n  opacity: 1;\n  background: #009688;\n  -webkit-transform: scale(1);\n  -moz-transform: scale(1);\n  -ms-transform: scale(1);\n  -o-transform: scale(1);\n  transform: scale(1);\n}\n.radio-button--material__input:disabled + .radio-button__checkmark {\n  opacity: 1;\n}\n.radio-button--material__input:disabled + .radio-button__checkmark:after {\n  background-color: #afafaf;\n  border-color: #afafaf;\n}\n.radio-button--material__input:disabled + .radio-button__checkmark:before {\n  border-color: #afafaf;\n}\n`;},
   'materialrange': ()=>{return `ons-range:before {\n  content: '';\n  display: block;\n  position: relative;\n  top: 17px;\n  height: 2px;\n  margin-bottom: -2px;\n  background-color: #ccc;\n}\nons-range .range {\n  position: relative;\n  background: transparent;\n}\nons-range .range::-moz-range-track {\n  background: transparent;\n}\nons-range[disabled] {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\nons-range[disabled] .range {\n  opacity: 1;\n}\n.range {\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  vertical-align: top;\n  outline: none;\n  line-height: 1;\n  -webkit-appearance: none;\n  border: none;\n  height: 2px;\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#ccc));\n  background-image: -webkit-linear-gradient(#ccc, #ccc);\n  background-image: -moz-linear-gradient(#ccc, #ccc);\n  background-image: -o-linear-gradient(#ccc, #ccc);\n  background-image: linear-gradient(#ccc, #ccc);\n  background-position: left center;\n  -webkit-background-size: 100% 2px;\n  background-size: 100% 2px;\n  background-repeat: no-repeat;\n  overflow: hidden;\n  height: 32px;\n}\n.range::-moz-range-track {\n  position: relative;\n  border: none;\n  background-color: #ccc;\n  height: 2px;\n  border-radius: 30px;\n  box-shadow: none;\n  top: 0;\n  margin: 0;\n  padding: 0;\n}\n.range::-ms-track {\n  position: relative;\n  border: none;\n  background-color: #ccc;\n  height: 0;\n  border-radius: 30px;\n}\n.range::-webkit-slider-thumb {\n  cursor: pointer;\n  position: relative;\n  height: 29px;\n  width: 29px;\n  background-color: #fff;\n  border: 1px solid #ccc;\n  -webkit-border-radius: 30px;\n  border-radius: 30px;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  margin: 0;\n  padding: 0;\n  -webkit-appearance: none;\n  top: 0;\n}\n.range::-moz-range-thumb {\n  cursor: pointer;\n  position: relative;\n  height: 29px;\n  width: 29px;\n  background-color: #fff;\n  border: 1px solid #ccc;\n  border-radius: 30px;\n  box-shadow: none;\n  margin: 0;\n  padding: 0;\n}\n.range::-ms-thumb {\n  cursor: pointer;\n  position: relative;\n  height: 29px;\n  width: 29px;\n  background-color: #fff;\n  border: 1px solid #ccc;\n  border-radius: 30px;\n  box-shadow: none;\n  margin: 0;\n  padding: 0;\n  top: 0;\n}\n.range::-ms-fill-lower {\n  height: 2px;\n  background-color: rgba(24,103,194,0.81);\n}\n.range::-ms-tooltip {\n  display: none;\n}\n.range:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.range__left {\n  position: relative;\n  top: 17px;\n  height: 2px;\n  width: 0;\n  background-color: rgba(24,103,194,0.81);\n  pointer-events: none;\n}\n[disabled] > .range__left,\n.range--material:disabled + .range__left {\n  visibility: hidden;\n}\n.range--material {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#e0e0e0));\n  background-image: -webkit-linear-gradient(#e0e0e0, #e0e0e0);\n  background-image: -moz-linear-gradient(#e0e0e0, #e0e0e0);\n  background-image: -o-linear-gradient(#e0e0e0, #e0e0e0);\n  background-image: linear-gradient(#e0e0e0, #e0e0e0);\n  background-position: center;\n  -webkit-background-size: 100% 2px;\n  background-size: 100% 2px;\n  overflow: visible;\n}\n.range--material::-webkit-slider-thumb {\n  top: 1px;\n  border: none;\n  height: 36px;\n  width: 14px;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n  background-color: transparent;\n  background-image: -webkit-radial-gradient(7px, circle 6px, #009688 0%, #009688 6px, transparent 7px);\n  background-image: radial-gradient(circle 6px at 7px, #009688 0%, #009688 6px, transparent 7px);\n  margin-top: -1px;\n}\n.range--material::-moz-range-thumb {\n  top: 1px;\n  border: 3px solid #e0e0e0;\n  height: 12px;\n  width: 12px;\n  border-radius: 100%;\n  border-color: #009688;\n  background-color: #009688;\n}\n.range--material::-moz-range-track {\n  background-color: #e0e0e0;\n}\n.range--material::-ms-thumb {\n  margin-top: 1px;\n  border: none;\n  height: 12px;\n  width: 12px;\n  border-radius: 100%;\n  border-color: #009688;\n  background-color: #009688;\n}\n.range--material:focus::-moz-range-thumb {\n  border-color: #009688;\n  background-color: #009688;\n}\n.range--material::-moz-range-thumb:before {\n  display: none;\n}\n.range--material::-webkit-slider-thumb:before {\n  display: none;\n}\n.range--material::-ms-fill-lower {\n  background-color: #009688;\n}\n.range--material::-moz-range-thumb:after {\n  margin-top: -3px;\n  margin-left: -3px;\n  content: '';\n  display: block;\n  border: 0px;\n  border-radius: 100%;\n  height: 12px;\n  width: 12px;\n  background-color: #009688;\n  opacity: 0.2;\n  -moz-transition: -moz-transform 0.1s linear;\n  transition: transform 0.1s linear;\n}\n.range--material::-webkit-slider-thumb:after {\n  margin-top: -3px;\n  margin-left: -3px;\n  content: '';\n  display: block;\n  border: 0px;\n  -webkit-border-radius: 100%;\n  border-radius: 100%;\n  height: 12px;\n  width: 12px;\n  background-color: #009688;\n  opacity: 0.2;\n  -webkit-transition: -webkit-transform 0.1s linear;\n  transition: transform 0.1s linear;\n  display: inline-block;\n  margin-left: 1px;\n  margin-top: 12px;\n}\n.range--material::-ms-fill-upper {\n  margin-top: -6px;\n  margin-left: -6px;\n  content: '';\n  display: block;\n  border: 0px;\n  border-radius: 100%;\n  height: 12px;\n  width: 12px;\n  background-color: #009688;\n  opacity: 0.2;\n  transition: transform 0.1s linear;\n}\n.range--material:active::-webkit-slider-thumb:after {\n  -webkit-transform: scale(2.5);\n  transform: scale(2.5);\n}\n.range--material:active::-moz-range-thumb:after {\n  -moz-transform: scale(2.5);\n  transform: scale(2.5);\n}\n.range--material:active::-ms-fill-upper {\n  -ms-transform: scale(2.5);\n  transform: scale(2.5);\n}\n.range--material__left {\n  background-color: #009688;\n}\n`;},
   'materialswitch': ()=>{return `.switch.switch--material {\n  width: 36px;\n  height: 24px;\n  padding: 0 10px;\n  min-width: 36px;\n}\n.switch.switch--material .switch__toggle {\n  background-color: #b0afaf;\n  margin-top: 5px;\n  height: 14px;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n.switch.switch--material .switch__input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n  z-index: -1;\n}\n.switch.switch--material .switch__handle {\n  background-color: #f1f1f1;\n  left: 0px;\n  margin-top: -5px;\n  width: 20px;\n  height: 20px;\n  -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);\n  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);\n}\n.switch.switch--material input:checked + .switch__toggle {\n  background-color: #77c2bb;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n.switch.switch--material input:checked + .switch__toggle .switch__handle {\n  left: 16px;\n  background-color: #009688;\n  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);\n  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);\n}\n.switch.switch--material input:disabled + .switch__toggle {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.switch.switch--material .switch__handle:before {\n  background: transparent;\n  content: '';\n  display: block;\n  width: 100%;\n  height: 100%;\n  -webkit-border-radius: 50%;\n  border-radius: 50%;\n  z-index: -1;\n  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.12);\n  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.12);\n  -webkit-transition: -webkit-box-shadow 0.1s linear;\n  -moz-transition: box-shadow 0.1s linear;\n  -o-transition: box-shadow 0.1s linear;\n  transition: box-shadow 0.1s linear;\n}\n.switch.switch--material.switch--active .switch__handle:before {\n  -webkit-box-shadow: 0px 0px 0px 14px rgba(0,0,0,0.12);\n  box-shadow: 0px 0px 0px 14px rgba(0,0,0,0.12);\n}\n.switch.switch--material.switch--active input:checked + .switch__toggle .switch__handle:before {\n  -webkit-box-shadow: 0px 0px 0px 14px #009688;\n  box-shadow: 0px 0px 0px 14px #009688;\n}\n.switch.switch--material .switch__touch {\n  position: absolute;\n  top: -10px;\n  bottom: -10px;\n  left: -15px;\n  right: -15px;\n}\n`;},
-  'materialtabbar': ()=>{return `.tab-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table;\n  table-layout: fixed;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  right: 0px;\n  white-space: nowrap;\n  margin: 0;\n  padding: 0;\n  height: 49px;\n  background-color: #fff;\n  border-top: 1px solid #ccc;\n  width: 100%;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar {\n    border-top: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: top;\n    background-image: -webkit-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(180deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar__item {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  display: table-cell;\n  width: auto;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.tab-bar__item > input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.tab-bar__button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  text-decoration: none;\n  padding: 0;\n  height: 49px;\n  letter-spacing: 0;\n  color: #999;\n  text-shadow: 0 1px none;\n  vertical-align: top;\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n  width: 100%;\n  font-weight: 400;\n  line-height: 49px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar__button {\n    border-top: none;\n  }\n}\n.tab-bar__icon {\n  font-size: 24px;\n  padding: 0;\n  margin: 0;\n  line-height: 26px;\n  display: block;\n  height: 28px;\n}\n.tab-bar__label {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n}\n.tab-bar__badge.notification {\n  position: absolute;\n  top: 5px;\n  z-index: 10;\n  font-size: 12px;\n  height: 16px;\n  line-height: 16px;\n  -webkit-border-radius: 8px;\n  border-radius: 8px;\n}\n.tab-bar__icon + .tab-bar__label {\n  font-size: 10px;\n  line-height: 1;\n  margin: 0;\n  font-weight: 400;\n}\n.tab-bar__label:first-child {\n  font-size: 16px;\n  line-height: 49px;\n  margin: 0;\n  padding: 0;\n}\n.tab-bar__button {\n  color: #999;\n}\n:checked + .tab-bar__button {\n  color: rgba(24,103,194,0.81);\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n}\n.tab-bar__button:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.tab-bar__button:focus {\n  z-index: 1;\n  border-top: none;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  outline: 0;\n}\n.tab-bar__content {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 49px;\n  z-index: 0;\n}\n.tab-bar--top {\n  position: relative;\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  bottom: auto;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar--top {\n    border-bottom: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: bottom;\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar--top__content {\n  top: 49px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 0;\n}\n.tab-bar--top-border__button {\n  background-color: transparent;\n  border-bottom: 4px solid transparent;\n}\n:checked + .tab-bar--top-border__button {\n  background-color: transparent;\n  border-bottom: 4px solid rgba(24,103,194,0.81);\n}\n.tab-bar--material {\n  background-color: #009688;\n  border-bottom-width: 0px;\n  -webkit-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.14), 0 3px 5px -2px rgba(0,0,0,0.12), 0 5px 1px -4px rgba(0,0,0,0.2);\n  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.14), 0 3px 5px -2px rgba(0,0,0,0.12), 0 5px 1px -4px rgba(0,0,0,0.2);\n}\n.tab-bar--material__button {\n  background-color: transparent;\n  color: rgba(255, 255, 255, 0.6);\n  text-transform: uppercase;\n  font-size: 14px;\n  font-weight: 500;\n  font-family: 'Roboto', 'Noto', sans-serif;\n  -webkit-font-smoothing: antialiased;\n}\n.tab-bar--material__button:after {\n  content: '';\n  display: block;\n  width: 0px;\n  height: 2px;\n  bottom: 0px;\n  position: absolute;\n  margin-top: -2px;\n  background-color: #ffffff;\n}\n:checked + .tab-bar--material__button:after {\n  width: 100%;\n  -webkit-transition: width 0.2s ease-in-out;\n  -moz-transition: width 0.2s ease-in-out;\n  -o-transition: width 0.2s ease-in-out;\n  transition: width 0.2s ease-in-out;\n}\n:checked + .tab-bar--material__button {\n  background-color: transparent;\n  color: #ffffff;\n}\n.tab-bar--material__item:not([ripple]):active {\n  background-color: #26a69a;\n}\n`;},
   'materialtabbariconandlabel': ()=>{return `.tab-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table;\n  table-layout: fixed;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  right: 0px;\n  white-space: nowrap;\n  margin: 0;\n  padding: 0;\n  height: 49px;\n  background-color: #fff;\n  border-top: 1px solid #ccc;\n  width: 100%;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar {\n    border-top: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: top;\n    background-image: -webkit-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(180deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar__item {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  display: table-cell;\n  width: auto;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.tab-bar__item > input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.tab-bar__button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  text-decoration: none;\n  padding: 0;\n  height: 49px;\n  letter-spacing: 0;\n  color: #999;\n  text-shadow: 0 1px none;\n  vertical-align: top;\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n  width: 100%;\n  font-weight: 400;\n  line-height: 49px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar__button {\n    border-top: none;\n  }\n}\n.tab-bar__icon {\n  font-size: 24px;\n  padding: 0;\n  margin: 0;\n  line-height: 26px;\n  display: block;\n  height: 28px;\n}\n.tab-bar__label {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n}\n.tab-bar__badge.notification {\n  position: absolute;\n  top: 5px;\n  z-index: 10;\n  font-size: 12px;\n  height: 16px;\n  line-height: 16px;\n  -webkit-border-radius: 8px;\n  border-radius: 8px;\n}\n.tab-bar__icon + .tab-bar__label {\n  font-size: 10px;\n  line-height: 1;\n  margin: 0;\n  font-weight: 400;\n}\n.tab-bar__label:first-child {\n  font-size: 16px;\n  line-height: 49px;\n  margin: 0;\n  padding: 0;\n}\n.tab-bar__button {\n  color: #999;\n}\n:checked + .tab-bar__button {\n  color: rgba(24,103,194,0.81);\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n}\n.tab-bar__button:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.tab-bar__button:focus {\n  z-index: 1;\n  border-top: none;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  outline: 0;\n}\n.tab-bar__content {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 49px;\n  z-index: 0;\n}\n.tab-bar--top {\n  position: relative;\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  bottom: auto;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar--top {\n    border-bottom: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: bottom;\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar--top__content {\n  top: 49px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 0;\n}\n.tab-bar--top-border__button {\n  background-color: transparent;\n  border-bottom: 4px solid transparent;\n}\n:checked + .tab-bar--top-border__button {\n  background-color: transparent;\n  border-bottom: 4px solid rgba(24,103,194,0.81);\n}\n.tab-bar--material {\n  background-color: #009688;\n  border-bottom-width: 0px;\n  -webkit-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.14), 0 3px 5px -2px rgba(0,0,0,0.12), 0 5px 1px -4px rgba(0,0,0,0.2);\n  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.14), 0 3px 5px -2px rgba(0,0,0,0.12), 0 5px 1px -4px rgba(0,0,0,0.2);\n}\n.tab-bar--material__button {\n  background-color: transparent;\n  color: rgba(255, 255, 255, 0.6);\n  text-transform: uppercase;\n  font-size: 14px;\n  font-weight: 500;\n  font-family: 'Roboto', 'Noto', sans-serif;\n  -webkit-font-smoothing: antialiased;\n}\n.tab-bar--material__button:after {\n  content: '';\n  display: block;\n  width: 0px;\n  height: 2px;\n  bottom: 0px;\n  position: absolute;\n  margin-top: -2px;\n  background-color: #ffffff;\n}\n:checked + .tab-bar--material__button:after {\n  width: 100%;\n  -webkit-transition: width 0.2s ease-in-out;\n  -moz-transition: width 0.2s ease-in-out;\n  -o-transition: width 0.2s ease-in-out;\n  transition: width 0.2s ease-in-out;\n}\n:checked + .tab-bar--material__button {\n  background-color: transparent;\n  color: #ffffff;\n}\n.tab-bar--material__item:not([ripple]):active {\n  background-color: #26a69a;\n}\n.tab-bar--material__label {\n  font-family: 'Roboto', 'Noto', sans-serif;\n  -webkit-font-smoothing: antialiased;\n}\n.tab-bar--material__label:first-child {\n  font-family: 'Roboto', 'Noto', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  letter-spacing: 0.015em;\n  font-weight: 500;\n  font-size: 14px;\n}\n.tab-bar--material__icon + .tab-bar--material__label {\n  font-size: 10px;\n}\n`;},
+  'materialtabbar': ()=>{return `.tab-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table;\n  table-layout: fixed;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  right: 0px;\n  white-space: nowrap;\n  margin: 0;\n  padding: 0;\n  height: 49px;\n  background-color: #fff;\n  border-top: 1px solid #ccc;\n  width: 100%;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar {\n    border-top: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: top;\n    background-image: -webkit-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(180deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar__item {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  display: table-cell;\n  width: auto;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.tab-bar__item > input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.tab-bar__button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  text-decoration: none;\n  padding: 0;\n  height: 49px;\n  letter-spacing: 0;\n  color: #999;\n  text-shadow: 0 1px none;\n  vertical-align: top;\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n  width: 100%;\n  font-weight: 400;\n  line-height: 49px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar__button {\n    border-top: none;\n  }\n}\n.tab-bar__icon {\n  font-size: 24px;\n  padding: 0;\n  margin: 0;\n  line-height: 26px;\n  display: block;\n  height: 28px;\n}\n.tab-bar__label {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n}\n.tab-bar__badge.notification {\n  position: absolute;\n  top: 5px;\n  z-index: 10;\n  font-size: 12px;\n  height: 16px;\n  line-height: 16px;\n  -webkit-border-radius: 8px;\n  border-radius: 8px;\n}\n.tab-bar__icon + .tab-bar__label {\n  font-size: 10px;\n  line-height: 1;\n  margin: 0;\n  font-weight: 400;\n}\n.tab-bar__label:first-child {\n  font-size: 16px;\n  line-height: 49px;\n  margin: 0;\n  padding: 0;\n}\n.tab-bar__button {\n  color: #999;\n}\n:checked + .tab-bar__button {\n  color: rgba(24,103,194,0.81);\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n}\n.tab-bar__button:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.tab-bar__button:focus {\n  z-index: 1;\n  border-top: none;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  outline: 0;\n}\n.tab-bar__content {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 49px;\n  z-index: 0;\n}\n.tab-bar--top {\n  position: relative;\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  bottom: auto;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar--top {\n    border-bottom: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: bottom;\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar--top__content {\n  top: 49px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 0;\n}\n.tab-bar--top-border__button {\n  background-color: transparent;\n  border-bottom: 4px solid transparent;\n}\n:checked + .tab-bar--top-border__button {\n  background-color: transparent;\n  border-bottom: 4px solid rgba(24,103,194,0.81);\n}\n.tab-bar--material {\n  background-color: #009688;\n  border-bottom-width: 0px;\n  -webkit-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.14), 0 3px 5px -2px rgba(0,0,0,0.12), 0 5px 1px -4px rgba(0,0,0,0.2);\n  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.14), 0 3px 5px -2px rgba(0,0,0,0.12), 0 5px 1px -4px rgba(0,0,0,0.2);\n}\n.tab-bar--material__button {\n  background-color: transparent;\n  color: rgba(255, 255, 255, 0.6);\n  text-transform: uppercase;\n  font-size: 14px;\n  font-weight: 500;\n  font-family: 'Roboto', 'Noto', sans-serif;\n  -webkit-font-smoothing: antialiased;\n}\n.tab-bar--material__button:after {\n  content: '';\n  display: block;\n  width: 0px;\n  height: 2px;\n  bottom: 0px;\n  position: absolute;\n  margin-top: -2px;\n  background-color: #ffffff;\n}\n:checked + .tab-bar--material__button:after {\n  width: 100%;\n  -webkit-transition: width 0.2s ease-in-out;\n  -moz-transition: width 0.2s ease-in-out;\n  -o-transition: width 0.2s ease-in-out;\n  transition: width 0.2s ease-in-out;\n}\n:checked + .tab-bar--material__button {\n  background-color: transparent;\n  color: #ffffff;\n}\n.tab-bar--material__item:not([ripple]):active {\n  background-color: #26a69a;\n}\n`;},
   'materialtabbaricononly': ()=>{return `.tab-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table;\n  table-layout: fixed;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  right: 0px;\n  white-space: nowrap;\n  margin: 0;\n  padding: 0;\n  height: 49px;\n  background-color: #fff;\n  border-top: 1px solid #ccc;\n  width: 100%;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar {\n    border-top: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: top;\n    background-image: -webkit-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(180deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar__item {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  display: table-cell;\n  width: auto;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.tab-bar__item > input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.tab-bar__button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  text-decoration: none;\n  padding: 0;\n  height: 49px;\n  letter-spacing: 0;\n  color: #999;\n  text-shadow: 0 1px none;\n  vertical-align: top;\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n  width: 100%;\n  font-weight: 400;\n  line-height: 49px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar__button {\n    border-top: none;\n  }\n}\n.tab-bar__icon {\n  font-size: 24px;\n  padding: 0;\n  margin: 0;\n  line-height: 26px;\n  display: block;\n  height: 28px;\n}\n.tab-bar__label {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n}\n.tab-bar__badge.notification {\n  position: absolute;\n  top: 5px;\n  z-index: 10;\n  font-size: 12px;\n  height: 16px;\n  line-height: 16px;\n  -webkit-border-radius: 8px;\n  border-radius: 8px;\n}\n.tab-bar__icon + .tab-bar__label {\n  font-size: 10px;\n  line-height: 1;\n  margin: 0;\n  font-weight: 400;\n}\n.tab-bar__label:first-child {\n  font-size: 16px;\n  line-height: 49px;\n  margin: 0;\n  padding: 0;\n}\n.tab-bar__button {\n  color: #999;\n}\n:checked + .tab-bar__button {\n  color: rgba(24,103,194,0.81);\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n}\n.tab-bar__button:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.tab-bar__button:focus {\n  z-index: 1;\n  border-top: none;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  outline: 0;\n}\n.tab-bar__content {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 49px;\n  z-index: 0;\n}\n.tab-bar--top {\n  position: relative;\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  bottom: auto;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar--top {\n    border-bottom: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: bottom;\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar--top__content {\n  top: 49px;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 0;\n}\n.tab-bar--top-border__button {\n  background-color: transparent;\n  border-bottom: 4px solid transparent;\n}\n:checked + .tab-bar--top-border__button {\n  background-color: transparent;\n  border-bottom: 4px solid rgba(24,103,194,0.81);\n}\n.tab-bar--material {\n  background-color: #009688;\n  border-bottom-width: 0px;\n  -webkit-box-shadow: 0 4px 2px -2px rgba(0,0,0,0.14), 0 3px 5px -2px rgba(0,0,0,0.12), 0 5px 1px -4px rgba(0,0,0,0.2);\n  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.14), 0 3px 5px -2px rgba(0,0,0,0.12), 0 5px 1px -4px rgba(0,0,0,0.2);\n}\n.tab-bar--material__button {\n  background-color: transparent;\n  color: rgba(255, 255, 255, 0.6);\n  text-transform: uppercase;\n  font-size: 14px;\n  font-weight: 500;\n  font-family: 'Roboto', 'Noto', sans-serif;\n  -webkit-font-smoothing: antialiased;\n}\n.tab-bar--material__button:after {\n  content: '';\n  display: block;\n  width: 0px;\n  height: 2px;\n  bottom: 0px;\n  position: absolute;\n  margin-top: -2px;\n  background-color: #ffffff;\n}\n:checked + .tab-bar--material__button:after {\n  width: 100%;\n  -webkit-transition: width 0.2s ease-in-out;\n  -moz-transition: width 0.2s ease-in-out;\n  -o-transition: width 0.2s ease-in-out;\n  transition: width 0.2s ease-in-out;\n}\n:checked + .tab-bar--material__button {\n  background-color: transparent;\n  color: #ffffff;\n}\n.tab-bar--material__item:not([ripple]):active {\n  background-color: #26a69a;\n}\n.tab-bar--material__icon {\n  font-size: 22px;\n  line-height: 36px;\n}\n`;},
   'modal': ()=>{return `.modal {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  white-space: nowrap;\n  overflow: hidden;\n  word-spacing: 0;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  overflow: hidden;\n  background-color: rgba(0, 0, 0, 0.7);\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  width: 100%;\n  height: 100%;\n  display: table;\n  z-index: 2147483647;\n}\n.modal__content {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  white-space: nowrap;\n  overflow: hidden;\n  word-spacing: 0;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table-cell;\n  vertical-align: middle;\n  text-align: center;\n  color: #fff;\n  white-space: normal;\n}\n`;},
   'navigationbar': ()=>{return `.navigation-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  white-space: nowrap;\n  overflow: hidden;\n  word-spacing: 0;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  z-index: 2;\n  display: block;\n  height: 44px;\n  padding-left: 0;\n  padding-right: 0;\n  background: #fff;\n  color: #1f1f21;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  font-weight: 400;\n  width: 100%;\n  white-space: nowrap;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #bbb, #bbb 100%);\n  background-image: -moz-linear-gradient(90deg, #bbb, #bbb 100%);\n  background-image: -o-linear-gradient(90deg, #bbb, #bbb 100%);\n  background-image: linear-gradient(0deg, #bbb, #bbb 100%);\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .navigation-bar {\n    background-image: -webkit-linear-gradient(90deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #bbb, #bbb 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #bbb, #bbb 50%, transparent 50%);\n  }\n}\n.navigation-bar__bg {\n  background: #fff;\n}\n.navigation-bar__item,\n.navigation-bar__left,\n.navigation-bar__right,\n.navigation-bar__center {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  height: 44px;\n  vertical-align: top;\n  overflow: visible;\n  display: block;\n  vertical-align: middle;\n  float: left;\n}\n.navigation-bar__left {\n  max-width: 50%;\n  width: 27%;\n  text-align: left;\n  line-height: 44px;\n}\n.navigation-bar__right {\n  max-width: 50%;\n  width: 27%;\n  text-align: right;\n  line-height: 44px;\n}\n.navigation-bar__center {\n  width: 46%;\n  text-align: center;\n  line-height: 44px;\n  font-size: 17px;\n  font-weight: 500;\n  color: #1f1f21;\n}\n.navigation-bar__title {\n  line-height: 44px;\n  font-size: 17px;\n  font-weight: 500;\n  color: #1f1f21;\n  margin: 0;\n  padding: 0;\n  overflow: visible;\n}\n.navigation-bar__center:first-child:last-child {\n  width: 100%;\n}\n`;},
@@ -95,8 +95,8 @@ const themeCss = {
   'tabbar': ()=>{return `.tab-bar {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  display: table;\n  table-layout: fixed;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  right: 0px;\n  white-space: nowrap;\n  margin: 0;\n  padding: 0;\n  height: 49px;\n  background-color: #fff;\n  border-top: 1px solid #ccc;\n  width: 100%;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar {\n    border-top: none;\n    -webkit-background-size: 100% 1px;\n    background-size: 100% 1px;\n    background-repeat: no-repeat;\n    background-position: top;\n    background-image: -webkit-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(270deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(180deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.tab-bar__item {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  position: relative;\n  overflow: hidden;\n  display: table-cell;\n  width: auto;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\n.tab-bar__item > input {\n  position: absolute;\n  overflow: hidden;\n  right: 0px;\n  top: 0px;\n  left: 0px;\n  bottom: 0px;\n  padding: 0;\n  border: 0;\n  opacity: 0.001;\n  z-index: 1;\n  vertical-align: top;\n  outline: none;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -webkit-appearance: none;\n  appearance: none;\n}\n.tab-bar__button {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden;\n  text-decoration: none;\n  padding: 0;\n  height: 49px;\n  letter-spacing: 0;\n  color: #999;\n  text-shadow: 0 1px none;\n  vertical-align: top;\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n  width: 100%;\n  font-weight: 400;\n  line-height: 49px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .tab-bar__button {\n    border-top: none;\n  }\n}\n.tab-bar__icon {\n  font-size: 24px;\n  padding: 0;\n  margin: 0;\n  line-height: 26px;\n  display: block;\n  height: 28px;\n}\n.tab-bar__label {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n}\n.tab-bar__badge.notification {\n  position: absolute;\n  top: 5px;\n  z-index: 10;\n  font-size: 12px;\n  height: 16px;\n  line-height: 16px;\n  -webkit-border-radius: 8px;\n  border-radius: 8px;\n}\n.tab-bar__icon + .tab-bar__label {\n  font-size: 10px;\n  line-height: 1;\n  margin: 0;\n  font-weight: 400;\n}\n.tab-bar__label:first-child {\n  font-size: 16px;\n  line-height: 49px;\n  margin: 0;\n  padding: 0;\n}\n.tab-bar__button {\n  color: #999;\n}\n:checked + .tab-bar__button {\n  color: rgba(24,103,194,0.81);\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-top: none;\n}\n.tab-bar__button:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.tab-bar__button:focus {\n  z-index: 1;\n  border-top: none;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  outline: 0;\n}\n.tab-bar__content {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 49px;\n  z-index: 0;\n}\n`;},
   'tappablelist': ()=>{return `.list__item__left {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 12px 14px 12px 0;\n  -webkit-box-ordinal-group: 1;\n  -webkit-order: 0;\n  -moz-box-ordinal-group: 1;\n  -ms-flex-order: 0;\n  order: 0;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n.list__item__left:empty {\n  width: 0;\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n}\n.list__item__center {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n  -moz-box-flex: 1;\n  -ms-flex-positive: 1;\n  flex-grow: 1;\n  -webkit-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-ordinal-group: 2;\n  -webkit-order: 1;\n  -moz-box-ordinal-group: 2;\n  -ms-flex-order: 1;\n  order: 1;\n  margin-right: auto;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  margin-left: 0;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  padding: 12px 6px 12px 0;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__center {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__item__right {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-left: auto;\n  padding: 12px 12px 12px 0;\n  -webkit-box-ordinal-group: 3;\n  -webkit-order: 2;\n  -moz-box-ordinal-group: 3;\n  -ms-flex-order: 2;\n  order: 2;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__right {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__header {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  text-align: left;\n  display: block;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  padding: 20px 0 0 15px;\n  font-size: 12px;\n  font-weight: 500;\n  color: #1f1f21;\n  text-shadow: none;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n  -webkit-box-shadow: 0px 1px 0px 0px #fff;\n  box-shadow: 0px 1px 0px 0px #fff;\n  min-height: 24px;\n  line-height: 24px;\n  margin-top: -1px;\n  text-transform: uppercase;\n  position: relative;\n}\n.list__header:not(:first-of-type) {\n  border-top: 1px solid #ccc;\n}\n.list {\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n  text-align: left;\n  overflow: auto;\n  display: block;\n  -webkit-overflow-scrolling: touch;\n  border-bottom: 1px solid #ccc;\n  overflow: hidden;\n}\n.list__item {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  position: relative;\n  list-style: none;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-pack: start;\n  -webkit-justify-content: flex-start;\n  -moz-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  padding: 0 0 0 14px;\n  margin: 1px 0 -1px 0;\n  color: #1f1f21;\n  background-color: #fff;\n}\n.list__item:first-child {\n  -webkit-box-shadow: inset 0px 1px 0px 0px #ccc;\n  box-shadow: inset 0px 1px 0px 0px #ccc;\n  margin-top: 0;\n}\n.list__item_active:active {\n  background-color: #d9d9d9;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.list__item--tappable:active {\n  background-color: #d9d9d9;\n}\n`;},
   'textarea': ()=>{return `.textarea {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  vertical-align: top;\n  resize: none;\n  outline: none;\n  padding: 5px 5px 5px 5px;\n  font-size: 15px;\n  font-weight: 400;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n  border: 1px solid #ccc;\n  background-color: #f9f9f9;\n  color: #1f1f21;\n  letter-spacing: 0;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  -webkit-appearance: none;\n  width: 100%;\n}\n.textarea:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.textarea::-webkit-input-placeholder,\n.textarea::-moz-placeholder,\n.textarea:-ms-input-placeholder {\n  color: #999;\n}\n`;},
-  'textareainlistitem': ()=>{return `.list__item__left {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 12px 14px 12px 0;\n  -webkit-box-ordinal-group: 1;\n  -webkit-order: 0;\n  -moz-box-ordinal-group: 1;\n  -ms-flex-order: 0;\n  order: 0;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n.list__item__left:empty {\n  width: 0;\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n}\n.list__item__center {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n  -moz-box-flex: 1;\n  -ms-flex-positive: 1;\n  flex-grow: 1;\n  -webkit-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-ordinal-group: 2;\n  -webkit-order: 1;\n  -moz-box-ordinal-group: 2;\n  -ms-flex-order: 1;\n  order: 1;\n  margin-right: auto;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  margin-left: 0;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  padding: 12px 6px 12px 0;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__center {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__item__right {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-left: auto;\n  padding: 12px 12px 12px 0;\n  -webkit-box-ordinal-group: 3;\n  -webkit-order: 2;\n  -moz-box-ordinal-group: 3;\n  -ms-flex-order: 2;\n  order: 2;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__right {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__header {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  text-align: left;\n  display: block;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  padding: 20px 0 0 15px;\n  font-size: 12px;\n  font-weight: 500;\n  color: #1f1f21;\n  text-shadow: none;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n  -webkit-box-shadow: 0px 1px 0px 0px #fff;\n  box-shadow: 0px 1px 0px 0px #fff;\n  min-height: 24px;\n  line-height: 24px;\n  margin-top: -1px;\n  text-transform: uppercase;\n  position: relative;\n}\n.list__header:not(:first-of-type) {\n  border-top: 1px solid #ccc;\n}\n.list {\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n  text-align: left;\n  overflow: auto;\n  display: block;\n  -webkit-overflow-scrolling: touch;\n  border-bottom: 1px solid #ccc;\n  overflow: hidden;\n}\n.list__item {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  position: relative;\n  list-style: none;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-pack: start;\n  -webkit-justify-content: flex-start;\n  -moz-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  padding: 0 0 0 14px;\n  margin: 1px 0 -1px 0;\n  color: #1f1f21;\n  background-color: #fff;\n}\n.list__item:first-child {\n  -webkit-box-shadow: inset 0px 1px 0px 0px #ccc;\n  box-shadow: inset 0px 1px 0px 0px #ccc;\n  margin-top: 0;\n}\n.list__item_active:active {\n  background-color: #d9d9d9;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n\n.textarea--transparent {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  vertical-align: top;\n  resize: none;\n  outline: none;\n  padding: 5px 5px 5px 5px;\n  padding-left: 0;\n  padding-right: 0;\n  font-size: 15px;\n  font-weight: 400;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n  border: none;\n  background-color: transparent;\n  color: #1f1f21;\n  letter-spacing: 0;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  -webkit-appearance: none;\n  width: 100%;\n}\n.textarea--transparent:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.textarea--transparent::-webkit-input-placeholder,\n.textarea--transparent::-moz-placeholder,\n.textarea--transparent:-ms-input-placeholder {\n  color: #999;\n}\n`;},
   'textareatransparent': ()=>{return `.textarea--transparent {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  vertical-align: top;\n  resize: none;\n  outline: none;\n  padding: 5px 5px 5px 5px;\n  padding-left: 0;\n  padding-right: 0;\n  font-size: 15px;\n  font-weight: 400;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n  border: none;\n  background-color: transparent;\n  color: #1f1f21;\n  letter-spacing: 0;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  -webkit-appearance: none;\n  width: 100%;\n}\n.textarea--transparent:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.textarea--transparent::-webkit-input-placeholder,\n.textarea--transparent::-moz-placeholder,\n.textarea--transparent:-ms-input-placeholder {\n  color: #999;\n}\n`;},
+  'textareainlistitem': ()=>{return `.list__item__left {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 12px 14px 12px 0;\n  -webkit-box-ordinal-group: 1;\n  -webkit-order: 0;\n  -moz-box-ordinal-group: 1;\n  -ms-flex-order: 0;\n  order: 0;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n.list__item__left:empty {\n  width: 0;\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n}\n.list__item__center {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n  -moz-box-flex: 1;\n  -ms-flex-positive: 1;\n  flex-grow: 1;\n  -webkit-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-ordinal-group: 2;\n  -webkit-order: 1;\n  -moz-box-ordinal-group: 2;\n  -ms-flex-order: 1;\n  order: 1;\n  margin-right: auto;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  margin-left: 0;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  padding: 12px 6px 12px 0;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__center {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__item__right {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-left: auto;\n  padding: 12px 12px 12px 0;\n  -webkit-box-ordinal-group: 3;\n  -webkit-order: 2;\n  -moz-box-ordinal-group: 3;\n  -ms-flex-order: 2;\n  order: 2;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__right {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__header {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  text-align: left;\n  display: block;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  padding: 20px 0 0 15px;\n  font-size: 12px;\n  font-weight: 500;\n  color: #1f1f21;\n  text-shadow: none;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n  -webkit-box-shadow: 0px 1px 0px 0px #fff;\n  box-shadow: 0px 1px 0px 0px #fff;\n  min-height: 24px;\n  line-height: 24px;\n  margin-top: -1px;\n  text-transform: uppercase;\n  position: relative;\n}\n.list__header:not(:first-of-type) {\n  border-top: 1px solid #ccc;\n}\n.list {\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n  text-align: left;\n  overflow: auto;\n  display: block;\n  -webkit-overflow-scrolling: touch;\n  border-bottom: 1px solid #ccc;\n  overflow: hidden;\n}\n.list__item {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  position: relative;\n  list-style: none;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-pack: start;\n  -webkit-justify-content: flex-start;\n  -moz-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  padding: 0 0 0 14px;\n  margin: 1px 0 -1px 0;\n  color: #1f1f21;\n  background-color: #fff;\n}\n.list__item:first-child {\n  -webkit-box-shadow: inset 0px 1px 0px 0px #ccc;\n  box-shadow: inset 0px 1px 0px 0px #ccc;\n  margin-top: 0;\n}\n.list__item_active:active {\n  background-color: #d9d9d9;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n\n.textarea--transparent {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  vertical-align: top;\n  resize: none;\n  outline: none;\n  padding: 5px 5px 5px 5px;\n  padding-left: 0;\n  padding-right: 0;\n  font-size: 15px;\n  font-weight: 400;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n  border: none;\n  background-color: transparent;\n  color: #1f1f21;\n  letter-spacing: 0;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  -webkit-appearance: none;\n  width: 100%;\n}\n.textarea--transparent:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.textarea--transparent::-webkit-input-placeholder,\n.textarea--transparent::-moz-placeholder,\n.textarea--transparent:-ms-input-placeholder {\n  color: #999;\n}\n`;},
   'textinput': ()=>{return `.text-input {\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  -webkit-background-clip: padding-box;\n  background-clip: padding-box;\n  vertical-align: top;\n  outline: none;\n  line-height: 1;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  border: none;\n  background-color: transparent;\n  letter-spacing: 0;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  color: #1f1f21;\n  padding: 0;\n  margin: 0;\n  width: 100%;\n  font-size: 15px;\n  height: 31px;\n  font-weight: 400;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n.text-input::-webkit-input-placeholder {\n  color: #999;\n}\n.text-input::-moz-placeholder {\n  color: #999;\n}\n.text-input::-ms-input-placeholder {\n  color: #999;\n}\n.text-input:-ms-input-placeholder {\n  color: #999;\n}\n.text-input:disabled {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n  border: none;\n  background-color: transparent;\n}\n.text-input:disabled::-webkit-input-placeholder {\n  border: none;\n  background-color: transparent;\n  color: #999;\n}\n.text-input:disabled::-moz-placeholder {\n  border: none;\n  background-color: transparent;\n  color: #999;\n}\n.text-input:disabled::-ms-input-placeholder {\n  border: none;\n  background-color: transparent;\n  color: #999;\n}\n.text-input:disabled:-ms-input-placeholder {\n  border: none;\n  background-color: transparent;\n  color: #999;\n}\n.text-input::-ms-clear {\n  display: none;\n}\n.text-input:invalid {\n  border: none;\n  background-color: transparent;\n  color: #1f1f21;\n}\n`;},
   'textinputinlistitem': ()=>{return `.list__item__left {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 12px 14px 12px 0;\n  -webkit-box-ordinal-group: 1;\n  -webkit-order: 0;\n  -moz-box-ordinal-group: 1;\n  -ms-flex-order: 0;\n  order: 0;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n.list__item__left:empty {\n  width: 0;\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n}\n.list__item__center {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n  -moz-box-flex: 1;\n  -ms-flex-positive: 1;\n  flex-grow: 1;\n  -webkit-flex-wrap: wrap;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-ordinal-group: 2;\n  -webkit-order: 1;\n  -moz-box-ordinal-group: 2;\n  -ms-flex-order: 1;\n  order: 1;\n  margin-right: auto;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  margin-left: 0;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  padding: 12px 6px 12px 0;\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__center {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__item__right {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin-left: auto;\n  padding: 12px 12px 12px 0;\n  -webkit-box-ordinal-group: 3;\n  -webkit-order: 2;\n  -moz-box-ordinal-group: 3;\n  -ms-flex-order: 2;\n  order: 2;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-align-self: stretch;\n  -ms-flex-item-align: stretch;\n  align-self: stretch;\n  border-bottom: none;\n  -webkit-background-size: 100% 1px;\n  background-size: 100% 1px;\n  background-repeat: no-repeat;\n  background-position: bottom;\n  background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -moz-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: -o-linear-gradient(90deg, #ccc, #ccc 100%);\n  background-image: linear-gradient(0deg, #ccc, #ccc 100%);\n  line-height: 1.2em;\n  min-height: 44px;\n}\n@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {\n  .list__item__right {\n    background-image: -webkit-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -moz-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: -o-linear-gradient(90deg, #ccc, #ccc 50%, transparent 50%);\n    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);\n  }\n}\n.list__header {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  text-align: left;\n  display: block;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  padding: 20px 0 0 15px;\n  font-size: 12px;\n  font-weight: 500;\n  color: #1f1f21;\n  text-shadow: none;\n  border-top: none;\n  border-bottom: 1px solid #ccc;\n  -webkit-box-shadow: 0px 1px 0px 0px #fff;\n  box-shadow: 0px 1px 0px 0px #fff;\n  min-height: 24px;\n  line-height: 24px;\n  margin-top: -1px;\n  text-transform: uppercase;\n  position: relative;\n}\n.list__header:not(:first-of-type) {\n  border-top: 1px solid #ccc;\n}\n.list {\n  padding: 0;\n  margin: 0;\n  font: inherit;\n  color: inherit;\n  background: transparent;\n  border: none;\n  line-height: normal;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  padding: 0;\n  margin: 0;\n  list-style-type: none;\n  text-align: left;\n  overflow: auto;\n  display: block;\n  -webkit-overflow-scrolling: touch;\n  border-bottom: 1px solid #ccc;\n  overflow: hidden;\n}\n.list__item {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  position: relative;\n  list-style: none;\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n  -moz-box-orient: horizontal;\n  -moz-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-pack: start;\n  -webkit-justify-content: flex-start;\n  -moz-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -moz-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  padding: 0 0 0 14px;\n  margin: 1px 0 -1px 0;\n  color: #1f1f21;\n  background-color: #fff;\n}\n.list__item:first-child {\n  -webkit-box-shadow: inset 0px 1px 0px 0px #ccc;\n  box-shadow: inset 0px 1px 0px 0px #ccc;\n  margin-top: 0;\n}\n.list__item_active:active {\n  background-color: #d9d9d9;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n\n`;},
   'toolbarbutton': ()=>{return `.toolbar-button,\n.toolbar-button--outline,\n.toolbar-button--quiet {\n  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 17px;\n  padding: 4px 10px;\n  letter-spacing: 0;\n  color: rgba(38,100,171,0.81);\n  text-shadow: 0 1px none;\n  background-color: rgba(0,0,0,0);\n  -webkit-border-radius: 2px;\n  border-radius: 2px;\n  border: 1px solid transparent;\n  font-weight: 400;\n  font-size: 17px;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.toolbar-button:active,\n.toolbar-button--outline:active,\n.toolbar-button--quiet:active {\n  background-color: rgba(0,0,0,0);\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n  opacity: 0.2;\n}\n.toolbar-button:disabled,\n.toolbar-button[disabled] {\n  opacity: 0.3;\n  cursor: default;\n  pointer-events: none;\n}\n.toolbar-button:focus,\n.toolbar-button--outline:focus,\n.toolbar-button--quiet:focus {\n  outline: 0;\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.toolbar-button:hover,\n.toolbar-button--outline:hover,\n.toolbar-button--quiet:hover {\n  -webkit-transition: none;\n  -moz-transition: none;\n  -o-transition: none;\n  transition: none;\n}\n.toolbar-button--outline {\n  border: 1px solid rgba(38,100,171,0.81);\n  margin: auto 8px;\n  padding-left: 6px;\n  padding-right: 6px;\n}\n.toolbar-button--material {\n  font-size: 22px;\n  color: #ffffff;\n  display: inline-block;\n  padding: 0 12px;\n  height: 100%;\n  margin: 0;\n  border: none;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n  vertical-align: initial;\n}\n.toolbar-button--material:first-of-type {\n  margin-left: 4px;\n}\n.toolbar-button--material:last-of-type {\n  margin-right: 4px;\n}\n.toolbar-button--material:active {\n  opacity: 1;\n  background-color: rgba(255,255,255,0.15);\n}\n.back-button {\n  height: 44px;\n  line-height: 44px;\n  padding-left: 8px;\n  color: rgba(38,100,171,0.81);\n  background-color: rgba(0,0,0,0);\n}\n.back-button:active {\n  opacity: 0.2;\n}\n.back-button__label {\n  display: inline-block;\n  height: 100%;\n  vertical-align: top;\n}\n.back-button__icon {\n  display: inline-block;\n  height: 100%;\n  vertical-align: top;\n  margin-right: 6px;\n}\n.back-button__icon:before {\n  font-family: 'Ionicons';\n  content: '\f3cf';\n  font-size: 32px;\n}\n.back-button--material {\n  font-size: 22px;\n  color: #ffffff;\n  display: inline-block;\n  padding: 0 12px;\n  height: 100%;\n  margin: 0 0 0 4px;\n  border: none;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n  vertical-align: initial;\n  line-height: 56px;\n}\n.back-button--material__label {\n  display: none;\n  font-size: 20px;\n}\n.back-button--material__icon:before {\n  font-family: 'Material-Design-Iconic-Font';\n  content: '\f2ea';\n  font-size: 26px;\n}\n.back-button--material:active {\n  opacity: 1;\n  background-color: rgba(255,255,255,0.15);\n}\n`;},
@@ -112,11 +112,11 @@ const themeHtml = {
     'alertdialogwithouttitle': function(){return `<div class="alert-dialog-mask"></div>\n<div class="alert-dialog">\n  <div class="alert-dialog-container">\n    <div class="alert-dialog-content">\n      Hello World!\n    </div>\n\n    <div class="alert-dialog-footer">\n      <button class="alert-dialog-button alert-dialog-button--primal">OK</button>\n    </div>\n  </div>\n</div>\n`;},
     'borderedtoptabbar': function(){return `<div class="tab-bar tab-bar--top tab-bar--top-border">\n  <label class="tab-bar__item tab-bar--top-border__item">\n    <input type="radio" name="top-tab-bar-b" checked="checked">\n    <button class="tab-bar__button tab-bar--top-border__button">\n      Home\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--top-border__item">\n    <input type="radio" name="top-tab-bar-b">\n    <button class="tab-bar__button tab-bar--top-border__button">\n      Comments\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--top-border__item">\n    <input type="radio" name="top-tab-bar-b">\n    <button class="tab-bar__button tab-bar--top-border__button">\n      Activity\n    </button>\n  </label>\n</div>\n`;},
     'bottombar': function(){return `<div class="bottom-bar">\n  <div class="bottom-bar__line-height" style="text-align:center" id="control${this.elemId}">Bottom Toolbar</div>\n</div>\n`;},
-    'button': function(){return `<button class="button" id="control${this.elemId}">Button</button>\n`;},
     'buttonbar': function(){return `<div class="button-bar" style="width:280px;margin:0 auto;">\n  <div class="button-bar__item">\n    <button class="button-bar__button">One</button>\n  </div>\n  <div class="button-bar__item">\n    <button class="button-bar__button">Two</button>\n  </div>\n  <div class="button-bar__item">\n    <button class="button-bar__button">Three</button>\n  </div>\n</div>\n`;},
+    'button': function(){return `<button class="button" id="control${this.elemId}">Button</button>\n`;},
     'calltoactionbutton': function(){return `<button class="button--cta" id="control${this.elemId}">Button</button>\n`;},
     'categorylistheader': function(){return `<ul class="list">\n  <li class="list__header">\n    Header\n  </li>\n  <li class="list__item">\n    <div class="list__item__center">Item</div>\n  </li>\n</ul>\n`;},
-    'checkbox': function(){return `<label class="checkbox">\n  <input type="checkbox" class="checkbox__input">\n  <div class="checkbox__checkmark"></div>\n  OFF\n</label>\n\n<label class="checkbox">\n  <input type="checkbox" class="checkbox__input" checked="checked">\n  <div class="checkbox__checkmark"></div>\n  ON\n</label>\n\n<label class="checkbox">\n  <input type="checkbox" class="checkbox__input" disabled>\n  <div class="checkbox__checkmark"></div>\n  Disabled\n</label>\n`;},
+    'checkbox': function(){return `<input type="checkbox" class="checkbox__input" id="control${this.elemId}">\n<div class="checkbox__checkmark" id="state${this.elemId}"></div>\n<span id="label${this.elemId}"></span>\n`;},
     'checkboxinlistitem': function(){return `<ul class="list">\n  <li class="list__item list__item--tappable">\n    <div class="list__item__left">\n      <label class="checkbox">\n        <input type="checkbox" id="checkbox1" class="checkbox__input" name="c" checked="checked">\n        <div class="checkbox__checkmark"></div>\n      </label>\n    </div>\n    <label for="checkbox1" class="list__item__center">\n      Checkbox\n    </label>\n  </li>\n  <li class="list__item list__item--tappable">\n    <div class="list__item__left">\n      <label class="checkbox">\n        <input type="checkbox" id="checkbox2" class="checkbox__input" name="c">\n        <div class="checkbox__checkmark"></div>\n      </label>\n    </div>\n    <label for="checkbox2" class="list__item__center">\n      Checkbox\n    </label>\n  </li>\n</ul>\n`;},
     'dialog': function(){return `<div class="dialog-mask"></div>\n<div class="dialog">\n  <div class="dialog-container">\n    <div class="page">\n      <p style="text-align:center;margin-top:40px;opacity:0.4;">Content</p>\n    </div>\n  </div>\n</div>\n`;},
     'fab': function(){return `<button class="fab"><i class="zmdi zmdi-car"></i></button>\n<button class="fab" disabled><i class="zmdi zmdi-car"></i></button>\n`;},
@@ -151,8 +151,8 @@ const themeHtml = {
     'materialradiobutton': function(){return `<label class="radio-button radio-button--material">\n  <input type="radio" class="radio-button__input radio-button--material__input" name="r" checked="checked">\n  <div class="radio-button__checkmark radio-button--material__checkmark"></div>\n  Label\n</label>\n<label class="radio-button radio-button--material">\n  <input type="radio" class="radio-button__input radio-button--material__input" name="r">\n  <div class="radio-button__checkmark radio-button--material__checkmark"></div>\n  Label\n</label>\n<label class="radio-button radio-button--material">\n  <input type="radio" class="radio-button__input radio-button--material__input" name="s" disabled checked>\n  <div class="radio-button__checkmark radio-button--material__checkmark"></div>\n  Label\n</label>\n<label class="radio-button radio-button--material">\n  <input type="radio" class="radio-button__input radio-button--material__input" name="s" disabled>\n  <div class="radio-button__checkmark radio-button--material__checkmark"></div>\n  Label\n</label>\n`;},
     'materialrange': function(){return `<input type="range" class="range range--material" id="control${this.elemId}">\n`;},
     'materialswitch': function(){return `<input type="checkbox" class="switch__input switch--material__input" id="control${this.elemId}">\n<div class="switch__toggle switch--material__toggle">\n  <div class="switch__handle switch--material__handle">\n  </div>\n</div>\n`;},
-    'materialtabbar': function(){return `<div class="tab-bar tab-bar--top tab-bar--material">\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a" checked="checked">\n    <button class="tab-bar__button tab-bar--material__button">\n      Music\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      Movies\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      Books\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      Games\n    </button>\n  </label>\n\n</div>\n`;},
     'materialtabbariconandlabel': function(){return `<div class="tab-bar tab-bar--top tab-bar--material">\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a" checked="checked">\n    <button class="tab-bar__button tab-bar--material__button">\n      <i class="tab-bar__icon tab-bar--material__icon zmdi zmdi-phone"></i>\n      <div class="tab-bar__label tab-bar--material__label">Call</div>\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      <i class="tab-bar__icon tab-bar--material__icon zmdi zmdi-favorite"></i>\n      <div class="tab-bar__label tab-bar--material__label">Favorites</div>\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      <i class="tab-bar__icon tab-bar--material__icon zmdi zmdi-delete"></i>\n      <div class="tab-bar__label tab-bar--material__label">Delete</div>\n    </button>\n  </label>\n</div>\n`;},
+    'materialtabbar': function(){return `<div class="tab-bar tab-bar--top tab-bar--material">\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a" checked="checked">\n    <button class="tab-bar__button tab-bar--material__button">\n      Music\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      Movies\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      Books\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      Games\n    </button>\n  </label>\n\n</div>\n`;},
     'materialtabbaricononly': function(){return `<div class="tab-bar tab-bar--top tab-bar--material">\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a" checked="checked">\n    <button class="tab-bar__button tab-bar--material__button">\n      <i class="tab-bar__icon tab-bar--material__icon zmdi zmdi-phone"></i>\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      <i class="tab-bar__icon tab-bar--material__icon zmdi zmdi-favorite"></i>\n    </button>\n  </label>\n\n  <label class="tab-bar__item tab-bar--material__item">\n    <input type="radio" name="tab-bar-material-a">\n    <button class="tab-bar__button tab-bar--material__button">\n      <i class="tab-bar__icon tab-bar--material__icon zmdi zmdi-pin-account"></i>\n    </button>\n  </label>\n</div>\n`;},
     'modal': function(){return `<div class="modal">\n  <div class="modal__content">\n    Message Text\n  </div>\n</div>\n`;},
     'navigationbar': function(){return `<div class="navigation-bar">\n  <div class="navigation-bar__center" id="control${this.elemId}">Navigation Bar</div>\n</div>\n`;},
@@ -183,8 +183,8 @@ const themeHtml = {
     'tabbar': function(){return `<div class="tab-bar">\n  <label class="tab-bar__item">\n    <input type="radio" name="tab-bar-c" checked="checked">\n    <button class="tab-bar__button">\n      <div class="tab-bar__label">One</div>\n    </button>\n  </label>\n\n  <label class="tab-bar__item">\n    <input type="radio" name="tab-bar-c">\n    <button class="tab-bar__button">\n      <div class="tab-bar__label">Two</div>\n    </button>\n  </label>\n\n  <label class="tab-bar__item">\n    <input type="radio" name="tab-bar-c">\n    <button class="tab-bar__button">\n      <div class="tab-bar__label">Three</div>\n    </button>\n  </label>\n</div>\n`;},
     'tappablelist': function(){return `<ul class="list">\n  <li class="list__item list__item--tappable">\n    <div class="list__item__center">Tappable Item</div>\n  </li>\n</ul>\n`;},
     'textarea': function(){return `<textarea class="textarea" rows="3" placeholder="Textarea"></textarea>\n`;},
-    'textareainlistitem': function(){return `<ul class="list">\n  <li class="list__item">\n    <div class="list__item__center">\n      <textarea class="textarea textarea--transparent" placeholder="Text message"></textarea>\n    </div>\n  </li>\n</ul>\n`;},
     'textareatransparent': function(){return `<textarea class="textarea--transparent" rows="3" placeholder="Textarea"></textarea>\n`;},
+    'textareainlistitem': function(){return `<ul class="list">\n  <li class="list__item">\n    <div class="list__item__center">\n      <textarea class="textarea textarea--transparent" placeholder="Text message"></textarea>\n    </div>\n  </li>\n</ul>\n`;},
     'textinput': function(){return `<input type="text" class="text-input" placeholder="text" value="">\n<br>\n<input type="text" class="text-input" placeholder="text" value="" disabled>\n`;},
     'textinputinlistitem': function(){return `<ul class="list">\n  <li class="list__item">\n    <div class="list__item__center">\n      <input type="text" class="text-input" placeholder="Name">\n    </div>\n  </li>\n  <li class="list__item">\n    <div class="list__item__center">\n      <input type="text" class="text-input" placeholder="Email">\n    </div>\n  </li>\n</ul>\n`;},
     'toolbarbutton': function(){return `<!-- Prerequisite=This example use font-awesome(http://fortawesome.github.io/Font-Awesome/) to display icons. -->\n<button class="toolbar-button">\n  <i class="fa fa-bell" style="font-size:17px"></i> Label\n</button>\n\n<button class="toolbar-button toolbar-button--outline">\n  <i class="fa fa-bell" style="font-size:17px"></i> Label\n</button>\n`;},
@@ -240,6 +240,7 @@ class OnsenToggle extends OnsenBase {
   }
 
   refreshValue() {
+    console.log(this.value);
     if (this.value) {
       this.setAttrOfPart('control', 'checked', ' ');
     }
@@ -295,7 +296,7 @@ module.exports = OnsenMaterialSwitch;
 });
 
 __exports('onsen/range', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenRange extends OnsenBase {
   get componentName() {
@@ -308,7 +309,7 @@ module.exports = OnsenRange;
 });
 
 __exports('onsen/materialrange', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialRange extends OnsenBase {
   get componentName() {
@@ -321,7 +322,7 @@ module.exports = OnsenMaterialRange;
 });
 
 __exports('onsen/navigationbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNavigationBar extends OnsenBase {
   get componentName() {
@@ -334,7 +335,7 @@ module.exports = OnsenNavigationBar;
 });
 
 __exports('onsen/navigationbaritem', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNavigationBarItem extends OnsenBase {
   get componentName() {
@@ -347,7 +348,7 @@ module.exports = OnsenNavigationBarItem;
 });
 
 __exports('onsen/navigationbarwithoutlinebutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNavigationBarWithOutlineButton extends OnsenBase {
   get componentName() {
@@ -360,7 +361,7 @@ module.exports = OnsenNavigationBarWithOutlineButton;
 });
 
 __exports('onsen/bottombar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenBottomBar extends OnsenBase {
   get componentName() {
@@ -373,7 +374,7 @@ module.exports = OnsenBottomBar;
 });
 
 __exports('onsen/navigationbarwithsegment', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNavigationBarWithSegment extends OnsenBase {
   get componentName() {
@@ -386,7 +387,7 @@ module.exports = OnsenNavigationBarWithSegment;
 });
 
 __exports('onsen/materialnavigationbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialNavigationBar extends OnsenBase {
   get componentName() {
@@ -399,7 +400,7 @@ module.exports = OnsenMaterialNavigationBar;
 });
 
 __exports('onsen/noshadownavigationbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNoShadowNavigationBar extends OnsenBase {
   get componentName() {
@@ -412,7 +413,7 @@ module.exports = OnsenNoShadowNavigationBar;
 });
 
 __exports('onsen/materialnavigationbarwithicons', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialNavigationBarWithIcons extends OnsenBase {
   get componentName() {
@@ -425,7 +426,7 @@ module.exports = OnsenMaterialNavigationBarWithIcons;
 });
 
 __exports('onsen/transparentnavigationbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTransparentNavigationBar extends OnsenBase {
   get componentName() {
@@ -438,7 +439,7 @@ module.exports = OnsenTransparentNavigationBar;
 });
 
 __exports('onsen/button', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenButton extends OnsenBase {
   get componentName() {
@@ -451,7 +452,7 @@ module.exports = OnsenButton;
 });
 
 __exports('onsen/outlinebutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenOutlineButton extends OnsenBase {
   get componentName() {
@@ -464,7 +465,7 @@ module.exports = OnsenOutlineButton;
 });
 
 __exports('onsen/lightbutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenLightButton extends OnsenBase {
   get componentName() {
@@ -477,7 +478,7 @@ module.exports = OnsenLightButton;
 });
 
 __exports('onsen/quietbutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenQuietButton extends OnsenBase {
   get componentName() {
@@ -490,7 +491,7 @@ module.exports = OnsenQuietButton;
 });
 
 __exports('onsen/calltoactionbutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenCallToActionButton extends OnsenBase {
   get componentName() {
@@ -503,7 +504,7 @@ module.exports = OnsenCallToActionButton;
 });
 
 __exports('onsen/largebutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenLargeButton extends OnsenBase {
   get componentName() {
@@ -516,7 +517,7 @@ module.exports = OnsenLargeButton;
 });
 
 __exports('onsen/largequietbutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenLargeQuietButton extends OnsenBase {
   get componentName() {
@@ -529,7 +530,7 @@ module.exports = OnsenLargeQuietButton;
 });
 
 __exports('onsen/largecalltoactionbutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenLargeCallToActionButton extends OnsenBase {
   get componentName() {
@@ -542,7 +543,7 @@ module.exports = OnsenLargeCallToActionButton;
 });
 
 __exports('onsen/materialbutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialButton extends OnsenBase {
   get componentName() {
@@ -555,7 +556,7 @@ module.exports = OnsenMaterialButton;
 });
 
 __exports('onsen/materialflatbutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialFlatButton extends OnsenBase {
   get componentName() {
@@ -568,7 +569,7 @@ module.exports = OnsenMaterialFlatButton;
 });
 
 __exports('onsen/buttonbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenButtonBar extends OnsenBase {
   get componentName() {
@@ -581,7 +582,7 @@ module.exports = OnsenButtonBar;
 });
 
 __exports('onsen/segment', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenSegment extends OnsenBase {
   get componentName() {
@@ -594,7 +595,7 @@ module.exports = OnsenSegment;
 });
 
 __exports('onsen/icontabbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenIconTabBar extends OnsenBase {
   get componentName() {
@@ -607,7 +608,7 @@ module.exports = OnsenIconTabBar;
 });
 
 __exports('onsen/tabbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTabBar extends OnsenBase {
   get componentName() {
@@ -620,7 +621,7 @@ module.exports = OnsenTabBar;
 });
 
 __exports('onsen/icononlytabbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenIconOnlyTabBar extends OnsenBase {
   get componentName() {
@@ -633,7 +634,7 @@ module.exports = OnsenIconOnlyTabBar;
 });
 
 __exports('onsen/toptabbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTopTabBar extends OnsenBase {
   get componentName() {
@@ -646,7 +647,7 @@ module.exports = OnsenTopTabBar;
 });
 
 __exports('onsen/borderedtoptabbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenBorderedTopTabBar extends OnsenBase {
   get componentName() {
@@ -659,7 +660,7 @@ module.exports = OnsenBorderedTopTabBar;
 });
 
 __exports('onsen/materialtabbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialTabBar extends OnsenBase {
   get componentName() {
@@ -672,7 +673,7 @@ module.exports = OnsenMaterialTabBar;
 });
 
 __exports('onsen/materialtabbaricononly', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialTabBarIconOnly extends OnsenBase {
   get componentName() {
@@ -685,7 +686,7 @@ module.exports = OnsenMaterialTabBarIconOnly;
 });
 
 __exports('onsen/materialtabbariconandlabel', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialTabBarIconAndLabel extends OnsenBase {
   get componentName() {
@@ -698,7 +699,7 @@ module.exports = OnsenMaterialTabBarIconAndLabel;
 });
 
 __exports('onsen/notification', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNotification extends OnsenBase {
   get componentName() {
@@ -711,7 +712,7 @@ module.exports = OnsenNotification;
 });
 
 __exports('onsen/toolbarbutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenToolbarbutton extends OnsenBase {
   get componentName() {
@@ -724,11 +725,37 @@ module.exports = OnsenToolbarbutton;
 });
 
 __exports('onsen/checkbox', () => {
-const OnsenBase = require('onsen/base');
+const ELEM = require('core/elem');
+const {OnsenToggle} = require('onsen/base');
 
-class OnsenCheckbox extends OnsenBase {
+class OnsenCheckbox extends OnsenToggle {
   get componentName() {
     return 'checkbox';
+  }
+  get cellTagName() {
+    return 'label';
+  }
+  optimizeWidth() {
+    this.resizeTo(this.labelWidth);
+  }
+  get labelWidth() {
+    const elemId = this.markupElemIds ?
+      this._getMarkupElemIdPart('label') :
+      this.elemId;
+    const textWidth = this.stringWidth(this.label, null, elemId);
+    const paddingLeft = this.markupElemIds ?
+      ELEM.getSize(
+        this._getMarkupElemIdPart('state')
+      )[0] + 4 : 28;
+    return 28 + textWidth;
+  }
+  get optimalSize() {
+    const strWidth = this.labelWidth;
+    return [strWidth, 24];
+  }
+  click() {
+    super.click();
+    return false;
   }
 }
 
@@ -737,7 +764,7 @@ module.exports = OnsenCheckbox;
 });
 
 __exports('onsen/nobordercheckbox', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNoborderCheckbox extends OnsenBase {
   get componentName() {
@@ -750,7 +777,7 @@ module.exports = OnsenNoborderCheckbox;
 });
 
 __exports('onsen/materialcheckbox', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialCheckbox extends OnsenBase {
   get componentName() {
@@ -763,7 +790,7 @@ module.exports = OnsenMaterialCheckbox;
 });
 
 __exports('onsen/radiobutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenRadioButton extends OnsenBase {
   get componentName() {
@@ -776,7 +803,7 @@ module.exports = OnsenRadioButton;
 });
 
 __exports('onsen/materialradiobutton', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialRadioButton extends OnsenBase {
   get componentName() {
@@ -789,7 +816,7 @@ module.exports = OnsenMaterialRadioButton;
 });
 
 __exports('onsen/list', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenList extends OnsenBase {
   get componentName() {
@@ -802,7 +829,7 @@ module.exports = OnsenList;
 });
 
 __exports('onsen/noborderlist', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNoborderList extends OnsenBase {
   get componentName() {
@@ -815,7 +842,7 @@ module.exports = OnsenNoborderList;
 });
 
 __exports('onsen/categorylistheader', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenCategoryListHeader extends OnsenBase {
   get componentName() {
@@ -828,7 +855,7 @@ module.exports = OnsenCategoryListHeader;
 });
 
 __exports('onsen/tappablelist', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTappableList extends OnsenBase {
   get componentName() {
@@ -841,7 +868,7 @@ module.exports = OnsenTappableList;
 });
 
 __exports('onsen/switchinlistitem', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenSwitchInListItem extends OnsenBase {
   get componentName() {
@@ -854,7 +881,7 @@ module.exports = OnsenSwitchInListItem;
 });
 
 __exports('onsen/listitemwithchevron', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenListItemWithChevron extends OnsenBase {
   get componentName() {
@@ -867,7 +894,7 @@ module.exports = OnsenListItemWithChevron;
 });
 
 __exports('onsen/insetlist', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenInsetList extends OnsenBase {
   get componentName() {
@@ -880,7 +907,7 @@ module.exports = OnsenInsetList;
 });
 
 __exports('onsen/radiobuttoninlistitem', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenRadioButtonInListItem extends OnsenBase {
   get componentName() {
@@ -893,7 +920,7 @@ module.exports = OnsenRadioButtonInListItem;
 });
 
 __exports('onsen/checkboxinlistitem', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenCheckboxInListItem extends OnsenBase {
   get componentName() {
@@ -906,7 +933,7 @@ module.exports = OnsenCheckboxInListItem;
 });
 
 __exports('onsen/nobordercheckboxinlistitem', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenNoBorderCheckboxInListItem extends OnsenBase {
   get componentName() {
@@ -919,7 +946,7 @@ module.exports = OnsenNoBorderCheckboxInListItem;
 });
 
 __exports('onsen/textinputinlistitem', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTextInputInListItem extends OnsenBase {
   get componentName() {
@@ -932,7 +959,7 @@ module.exports = OnsenTextInputInListItem;
 });
 
 __exports('onsen/textareainlistitem', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTextareaInListItem extends OnsenBase {
   get componentName() {
@@ -945,7 +972,7 @@ module.exports = OnsenTextareaInListItem;
 });
 
 __exports('onsen/rightlabelinlistitem', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenRightLabelInListItem extends OnsenBase {
   get componentName() {
@@ -958,7 +985,7 @@ module.exports = OnsenRightLabelInListItem;
 });
 
 __exports('onsen/listitemwithsubtitle', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenListItemWithSubtitle extends OnsenBase {
   get componentName() {
@@ -971,7 +998,7 @@ module.exports = OnsenListItemWithSubtitle;
 });
 
 __exports('onsen/listitemwiththumbnail', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenListItemWithThumbnail extends OnsenBase {
   get componentName() {
@@ -984,7 +1011,7 @@ module.exports = OnsenListItemWithThumbnail;
 });
 
 __exports('onsen/listitemwithicon', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenListItemWithIcon extends OnsenBase {
   get componentName() {
@@ -997,7 +1024,7 @@ module.exports = OnsenListItemWithIcon;
 });
 
 __exports('onsen/materiallist', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialList extends OnsenBase {
   get componentName() {
@@ -1010,7 +1037,7 @@ module.exports = OnsenMaterialList;
 });
 
 __exports('onsen/materiallistwithheader', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialListWithHeader extends OnsenBase {
   get componentName() {
@@ -1023,7 +1050,7 @@ module.exports = OnsenMaterialListWithHeader;
 });
 
 __exports('onsen/materiallistwithcheckboxes', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialListWithCheckboxes extends OnsenBase {
   get componentName() {
@@ -1036,7 +1063,7 @@ module.exports = OnsenMaterialListWithCheckboxes;
 });
 
 __exports('onsen/materiallistwiththumbnails', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialListWithThumbnails extends OnsenBase {
   get componentName() {
@@ -1049,7 +1076,7 @@ module.exports = OnsenMaterialListWithThumbnails;
 });
 
 __exports('onsen/materiallistwithicons', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialListWithIcons extends OnsenBase {
   get componentName() {
@@ -1062,7 +1089,7 @@ module.exports = OnsenMaterialListWithIcons;
 });
 
 __exports('onsen/listitemwithoutdivider', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenListItemWithoutDivider extends OnsenBase {
   get componentName() {
@@ -1075,7 +1102,7 @@ module.exports = OnsenListItemWithoutDivider;
 });
 
 __exports('onsen/listitemwithlongdivider', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenListItemWithLongDivider extends OnsenBase {
   get componentName() {
@@ -1088,7 +1115,7 @@ module.exports = OnsenListItemWithLongDivider;
 });
 
 __exports('onsen/searchinput', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenSearchInput extends OnsenBase {
   get componentName() {
@@ -1101,7 +1128,7 @@ module.exports = OnsenSearchInput;
 });
 
 __exports('onsen/textinput', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTextInput extends OnsenBase {
   get componentName() {
@@ -1114,7 +1141,7 @@ module.exports = OnsenTextInput;
 });
 
 __exports('onsen/underbartextinput', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenUnderBarTextInput extends OnsenBase {
   get componentName() {
@@ -1127,7 +1154,7 @@ module.exports = OnsenUnderBarTextInput;
 });
 
 __exports('onsen/materialinput', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialInput extends OnsenBase {
   get componentName() {
@@ -1140,7 +1167,7 @@ module.exports = OnsenMaterialInput;
 });
 
 __exports('onsen/textarea', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTextarea extends OnsenBase {
   get componentName() {
@@ -1153,7 +1180,7 @@ module.exports = OnsenTextarea;
 });
 
 __exports('onsen/textareatransparent', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenTextareaTransparent extends OnsenBase {
   get componentName() {
@@ -1166,7 +1193,7 @@ module.exports = OnsenTextareaTransparent;
 });
 
 __exports('onsen/dialog', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenDialog extends OnsenBase {
   get componentName() {
@@ -1179,7 +1206,7 @@ module.exports = OnsenDialog;
 });
 
 __exports('onsen/materialdialog', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialDialog extends OnsenBase {
   get componentName() {
@@ -1192,7 +1219,7 @@ module.exports = OnsenMaterialDialog;
 });
 
 __exports('onsen/alertdialog', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenAlertDialog extends OnsenBase {
   get componentName() {
@@ -1205,7 +1232,7 @@ module.exports = OnsenAlertDialog;
 });
 
 __exports('onsen/alertdialogwithouttitle', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenAlertDialogWithoutTitle extends OnsenBase {
   get componentName() {
@@ -1218,7 +1245,7 @@ module.exports = OnsenAlertDialogWithoutTitle;
 });
 
 __exports('onsen/alertdialogwithmultiplebuttons', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenAlertDialogWithMultipleButtons extends OnsenBase {
   get componentName() {
@@ -1231,7 +1258,7 @@ module.exports = OnsenAlertDialogWithMultipleButtons;
 });
 
 __exports('onsen/alertdialogwithmultiplebuttons2', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenAlertDialogWithMultipleButtons2 extends OnsenBase {
   get componentName() {
@@ -1244,7 +1271,7 @@ module.exports = OnsenAlertDialogWithMultipleButtons2;
 });
 
 __exports('onsen/materialalertdialog', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenMaterialAlertDialog extends OnsenBase {
   get componentName() {
@@ -1257,7 +1284,7 @@ module.exports = OnsenMaterialAlertDialog;
 });
 
 __exports('onsen/popover', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenPopover extends OnsenBase {
   get componentName() {
@@ -1270,7 +1297,7 @@ module.exports = OnsenPopover;
 });
 
 __exports('onsen/popoverdown', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenPopoverDown extends OnsenBase {
   get componentName() {
@@ -1283,7 +1310,7 @@ module.exports = OnsenPopoverDown;
 });
 
 __exports('onsen/popoverleft', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenPopoverLeft extends OnsenBase {
   get componentName() {
@@ -1296,7 +1323,7 @@ module.exports = OnsenPopoverLeft;
 });
 
 __exports('onsen/popoverright', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenPopoverRight extends OnsenBase {
   get componentName() {
@@ -1309,7 +1336,7 @@ module.exports = OnsenPopoverRight;
 });
 
 __exports('onsen/modal', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenModal extends OnsenBase {
   get componentName() {
@@ -1322,7 +1349,7 @@ module.exports = OnsenModal;
 });
 
 __exports('onsen/progressbar', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenProgressBar extends OnsenBase {
   get componentName() {
@@ -1335,7 +1362,7 @@ module.exports = OnsenProgressBar;
 });
 
 __exports('onsen/progresscircle', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenProgressCircle extends OnsenBase {
   get componentName() {
@@ -1348,7 +1375,7 @@ module.exports = OnsenProgressCircle;
 });
 
 __exports('onsen/fab', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenFab extends OnsenBase {
   get componentName() {
@@ -1361,7 +1388,7 @@ module.exports = OnsenFab;
 });
 
 __exports('onsen/fabmini', () => {
-const OnsenBase = require('onsen/base');
+const {OnsenBase} = require('onsen/base');
 
 class OnsenFabMini extends OnsenBase {
   get componentName() {
