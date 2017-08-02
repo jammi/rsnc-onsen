@@ -53,6 +53,7 @@ packages:
     # - onsen/listitemwithlongdivider
     - onsen/textinput
     - onsen/searchinput
+    - onsen/passwordinput
     - onsen/underbartextinput
     - onsen/textarea
     - onsen/textareatransparent

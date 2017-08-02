@@ -33,10 +33,10 @@ class OnsenToggle extends OnsenBase {
 
   refreshValue() {
     if (this.value) {
-      this.setAttrOfPart('control', 'checked');
+      this.unsetAttrOfPart('control', 'checked');
     }
     else {
-      this.unsetAttrOfPart('control', 'checked');
+      this.setAttrOfPart('control', 'checked');
     }
   }
 }

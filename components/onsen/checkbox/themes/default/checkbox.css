@@ -1,5 +1,6 @@
 .checkbox {
   position: relative;
+  word-wrap: break-word;
   display: inline-block;
   vertical-align: top;
   cursor: default;
